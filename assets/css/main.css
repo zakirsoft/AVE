@@ -1,0 +1,35 @@
+/* setup sass compiler start */
+/* setup sass compiler end */
+/* reset default element start */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a, a:hover, a:active, a:focus {
+  text-decoration: none;
+}
+
+button, button:hover, button:active, button:focus {
+  border: none;
+  outline: none;
+}
+
+p {
+  font-size: 24px;
+}
+
+.container {
+  max-width: 1780px;
+}
+
+/* reset default element end */
+/* ?? start */
+/* ?? end */
+/*# sourceMappingURL=main.css.map */
