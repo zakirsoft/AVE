@@ -1,4 +1,4 @@
 *.log
-//nodemodules
-//css
-//.vscode
+nodemodules/
+css/
+.vscode
