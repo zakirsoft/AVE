@@ -25,11 +25,16 @@ ol {
   list-style: none;
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
+
 a, a:hover, a:active, a:focus {
   text-decoration: none;
 }
 
-button, button:hover, button:active, button:focus {
+button, button.btn, button:hover, button:active, button:focus {
   border: none;
   outline: none;
 }
@@ -37,10 +42,6 @@ button, button:hover, button:active, button:focus {
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-}
-
-p {
-  font-size: 24px;
 }
 
 .container__lg {
@@ -57,6 +58,34 @@ section {
 }
 
 /* reset default element end */
+/* header  start */
+header {
+  position: sticky;
+  top: -20px;
+  left: 0;
+  z-index: 9999;
+}
+
+header .header-top {
+  background-color: #333333;
+}
+
+header .header-top__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .header-top__content .contents__box {
+  display: flex;
+}
+
+header .header-top__content .contents__box .dropdown .btn {
+  background-color: transparent;
+  border: 0;
+  outline: none;
+}
+
+/* header  end */
 /* Banner start */
 #banner {
   position: relative;
