@@ -17,8 +17,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 ul,
@@ -36,17 +35,44 @@ button, button:hover, button:active, button:focus {
 }
 
 body {
-  background-color: #575153;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
 }
 
 p {
   font-size: 24px;
 }
 
-.container {
+.container__lg {
   max-width: 1780px;
 }
 
+.container__sm {
+  max-width: 1180px;
+}
+
+section {
+  padding: 60px 0px;
+  z-index: 1;
+}
+
 /* reset default element end */
+/* Banner start */
+#banner {
+  position: relative;
+  background: url("../images/banner/banner.png") top center/cover no-repeat;
+  height: 100vh;
+}
+
+/* Banner end */
+/* sub-Banner start */
+#sub-banner {
+  position: relative;
+  background: url("../images/banner/about.jpg") top center/cover no-repeat;
+  height: 45vh;
+}
+
+/* sub-Banner end */
 /* ?? start */
 /* ?? end */
+/*# sourceMappingURL=main.css.map */

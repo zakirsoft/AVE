@@ -1,33 +1,592 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>title Goes Here</title>
-    <!-- 
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>PRODUCT || AVE</title>
+		<!-- 
         ============ all Css goes here =========
         **
+        **Fontawesome
         ** bootstrap
         ** slick
         ** normalize
         ** CSS
      -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/slick.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-</head>
+		<link rel="stylesheet" href="assets/css/all.min.css" />
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="assets/css/slick.css" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
 
-<body>
+	<body>
+		<!-- header section start -->
+		<header>
+			<div class="header-top">
+				<div class="container container__sm">
+					<div class="header-top__content">
+						<div class="contents__box">
+							<p>Currency :</p>
+							<div class="dropdown">
+								<button
+									class="btn btn-secondary dropdown-toggle"
+									type="button"
+									id="dropdownMenuButton"
+									data-toggle="dropdown"
+									aria-haspopup="true"
+									aria-expanded="false"
+								>
+									GBP
+								</button>
+								<div
+									class="dropdown-menu"
+									aria-labelledby="dropdownMenuButton"
+								>
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#"
+										>Another action</a
+									>
+									<a class="dropdown-item" href="#"
+										>Something else here</a
+									>
+								</div>
+							</div>
+						</div>
+						<!-- user register/sign -->
+						<div class="contents__box">
+							<button class="contents__box_user">Register</button>
+							<button class="contents__box_user">Sign in</button>
+						</div>
+						<!-- shop cart -->
+						<div class="contents__box">
+							<div class="dropdown">
+								<button
+									class="btn btn-secondary dropdown-toggle"
+									type="button"
+									id="dropdownMenuButton"
+									data-toggle="dropdown"
+									aria-haspopup="true"
+									aria-expanded="false"
+								>
+									empty
+								</button>
+								<div
+									class="dropdown-menu"
+									aria-labelledby="dropdownMenuButton"
+								>
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#"
+										>Another action</a
+									>
+									<a class="dropdown-item" href="#"
+										>Something else here</a
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<div class="container container__lg">
+					<a class="navbar-brand" href="index.html">Avenue Fashion</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-toggle="collapse"
+						data-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
 
-    <!-- ?? section start -->
+					<div
+						class="collapse navbar-collapse"
+						id="navbarSupportedContent"
+					>
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									id="navbarDropdown"
+									role="button"
+									data-toggle="dropdown"
+									aria-haspopup="true"
+									aria-expanded="false"
+								>
+									Mens
+								</a>
+								<div
+									class="dropdown-menu row"
+									aria-labelledby="navbarDropdown"
+								>
+									<div class="col-6 dropdown-menu__lists">
+										<h2 class="menu__list_categeory">
+											Casuals
+										</h2>
+										<ul class="menu__list">
+											<li class="menu_item">
+												<a href="#">jackets</a>
+											</li>
+											<li class="menu_item">
+												<a href="#"
+													>hoodies & sweatshirts</a
+												>
+											</li>
+											<li class="menu_item">
+												<a href="#">Polo Shirts</a>
+											</li>
+											<li class="menu_item">
+												<a href="#">Sportswear</a>
+											</li>
+											<li class="menu_item">
+												<a href="#"
+													>Trousers & Chinos</a
+												>
+											</li>
+											<li class="menu_item">
+												<a href="#">T-Shirts</a>
+											</li>
+										</ul>
+									</div>
+									<div class="col-6 dropdown-menu__lists">
+										<h2 class="menu__list_categeory">
+											Formal
+										</h2>
+										<ul class="menu__list">
+											<li class="menu_item">
+												<a href="#">jackets</a>
+											</li>
+											<li class="menu_item">
+												<a href="#">Shirts</a>
+											</li>
+											<li class="menu_item">
+												<a href="#">Suits</a>
+											</li>
+											<li class="menu_item">
+												<a href="#">Trousers</a>
+											</li>
+										</ul>
+									</div>
+									<div class="col-12 dropdown-menu__lists">
+										<h4 class="offer">
+											Autumn sale!
+											<span class="off"
+												>up to 50% off</span
+											>
+										</h4>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									id="navbarDropdown"
+									role="button"
+									data-toggle="dropdown"
+									aria-haspopup="true"
+									aria-expanded="false"
+								>
+									Womens
+								</a>
+								<div
+									class="dropdown-menu row"
+									aria-labelledby="navbarDropdown"
+								>
+									<div class="col-6 dropdown-menu__lists">
+										<h2 class="menu__list_categeory">
+											Casuals
+										</h2>
+										<ul class="menu__list">
+											<li class="menu_item">
+												<a href="#">jackets</a>
+											</li>
+											<li class="menu_item">
+												<a href="#"
+													>hoodies & sweatshirts</a
+												>
+											</li>
+											<li class="menu_item">
+												<a href="#">Polo Shirts</a>
+											</li>
+											<li class="menu_item">
+												<a href="#">Sportswear</a>
+											</li>
+											<li class="menu_item">
+												<a href="#"
+													>Trousers & Chinos</a
+												>
+											</li>
+											<li class="menu_item">
+												<a href="#">T-Shirts</a>
+											</li>
+										</ul>
+									</div>
+									<div class="col-6 dropdown-menu__lists">
+										<h2 class="menu__list_categeory">
+											Formal
+										</h2>
+										<ul class="menu__list">
+											<li class="menu_item">
+												<a href="#">jackets</a>
+											</li>
+											<li class="menu_item">
+												<a href="#">Shirts</a>
+											</li>
+											<li class="menu_item">
+												<a href="#">Suits</a>
+											</li>
+											<li class="menu_item">
+												<a href="#">Trousers</a>
+											</li>
+										</ul>
+									</div>
+									<div class="col-12 dropdown-menu__lists">
+										<h4 class="offer">
+											Autumn sale!
+											<span class="off"
+												>up to 50% off</span
+											>
+										</h4>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="brand.html"
+									>The Brand</a
+								>
+							</li>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									id="navbarDropdown"
+									role="button"
+									data-toggle="dropdown"
+									aria-haspopup="true"
+									aria-expanded="false"
+								>
+									Local Stores
+								</a>
+								<div
+									class="dropdown-menu row"
+									aria-labelledby="navbarDropdown"
+								>
+									<div class="col-6 dropdown-menu__lists">
+										<h2 class="menu__list_categeory">
+											Casuals
+										</h2>
+										<ul class="menu__list">
+											<li class="menu_item">
+												<a href="#">jackets</a>
+											</li>
+											<li class="menu_item">
+												<a href="#"
+													>hoodies & sweatshirts</a
+												>
+											</li>
+											<li class="menu_item">
+												<a href="#">Polo Shirts</a>
+											</li>
+											<li class="menu_item">
+												<a href="#">Sportswear</a>
+											</li>
+											<li class="menu_item">
+												<a href="#"
+													>Trousers & Chinos</a
+												>
+											</li>
+											<li class="menu_item">
+												<a href="#">T-Shirts</a>
+											</li>
+										</ul>
+									</div>
+									<div class="col-6 dropdown-menu__lists">
+										<h2 class="menu__list_categeory">
+											Formal
+										</h2>
+										<ul class="menu__list">
+											<li class="menu_item">
+												<a href="#">jackets</a>
+											</li>
+											<li class="menu_item">
+												<a href="#">Shirts</a>
+											</li>
+											<li class="menu_item">
+												<a href="#">Suits</a>
+											</li>
+											<li class="menu_item">
+												<a href="#">Trousers</a>
+											</li>
+										</ul>
+									</div>
+									<div class="col-12 dropdown-menu__lists">
+										<h4 class="offer">
+											Autumn sale!
+											<span class="off"
+												>up to 50% off</span
+											>
+										</h4>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									id="navbarDropdown"
+									role="button"
+									data-toggle="dropdown"
+									aria-haspopup="true"
+									aria-expanded="false"
+								>
+									Look Book
+								</a>
+								<div
+									class="dropdown-menu row"
+									aria-labelledby="navbarDropdown"
+								>
+									<div class="col-6 dropdown-menu__lists">
+										<h2 class="menu__list_categeory">
+											Casuals
+										</h2>
+										<ul class="menu__list">
+											<li class="menu_item">
+												<a href="#">jackets</a>
+											</li>
+											<li class="menu_item">
+												<a href="#"
+													>hoodies & sweatshirts</a
+												>
+											</li>
+											<li class="menu_item">
+												<a href="#">Polo Shirts</a>
+											</li>
+											<li class="menu_item">
+												<a href="#">Sportswear</a>
+											</li>
+											<li class="menu_item">
+												<a href="#"
+													>Trousers & Chinos</a
+												>
+											</li>
+											<li class="menu_item">
+												<a href="#">T-Shirts</a>
+											</li>
+										</ul>
+									</div>
+									<div class="col-6 dropdown-menu__lists">
+										<h2 class="menu__list_categeory">
+											Formal
+										</h2>
+										<ul class="menu__list">
+											<li class="menu_item">
+												<a href="#">jackets</a>
+											</li>
+											<li class="menu_item">
+												<a href="#">Shirts</a>
+											</li>
+											<li class="menu_item">
+												<a href="#">Suits</a>
+											</li>
+											<li class="menu_item">
+												<a href="#">Trousers</a>
+											</li>
+										</ul>
+									</div>
+									<div class="col-12 dropdown-menu__lists">
+										<h4 class="offer">
+											Autumn sale!
+											<span class="off"
+												>up to 50% off</span
+											>
+										</h4>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<form class="form-inline my-2 my-lg-0">
+							<input
+								class="form-control mr-sm-2"
+								type="search"
+								placeholder="Search"
+								aria-label="Search"
+							/>
+							<button
+								class="btn btn-outline-success my-2 my-sm-0"
+								type="submit"
+							>
+								Search...
+							</button>
+						</form>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<!-- header section end -->
 
-    <!-- ?? section end -->
+		<!-- banner section start -->
+		<section id="sub-banner">
+			<div class="container container__lg">
+				<div class="row sub-banner__content">
+					<h2 class="sub-banner_title">
+						<span class="bold">The</span>
+						Brand
+					</h2>
+					<span class="sub-banner_slogan"
+						>company slogan goes here</span
+					>
+				</div>
+			</div>
+		</section>
+		<!-- banner section end -->
 
+		<!-- ?? section start -->
 
+		<!-- ?? section end -->
 
+		<!-- footer section start -->
+		<footer>
+			<div class="container container_sm">
+				<div class="row footer__top">
+					<div class="top__content col-lg-2">
+						<h4 class="content_title">Information</h4>
+						<ul class="footer__info">
+							<li class="info__item">
+								<a href="#">The brand</a>
+							</li>
+							<li class="info__item">
+								<a href="#">Local Stores</a>
+							</li>
+							<li class="info__item">
+								<a href="#">Customer Service</a>
+							</li>
+							<li class="info__item">
+								<a href="#">Privacy & cookies</a>
+							</li>
+							<li class="info__item"><a href="#">Site Map</a></li>
+						</ul>
+					</div>
+					<div class="top__content col-lg-2">
+						<h4 class="content_title">why buy from us</h4>
+						<ul class="footer__info">
+							<li class="info__item">
+								<a href="#">Shipping & returns</a>
+							</li>
+							<li class="info__item">
+								<a href="#">Secure shopping</a>
+							</li>
+							<li class="info__item">
+								<a href="#">Testimonials</a>
+							</li>
+							<li class="info__item">
+								<a href="#">Award Winning</a>
+							</li>
+							<li class="info__item">
+								<a href="#">Ethical trading</a>
+							</li>
+						</ul>
+					</div>
+					<div class="top__content col-lg-2">
+						<h4 class="content_title">Your Account</h4>
+						<ul class="footer__info">
+							<li class="info__item">
+								<a href="#">Sign in</a>
+							</li>
+							<li class="info__item">
+								<a href="#">Register</a>
+							</li>
+							<li class="info__item">
+								<a href="#">View cart</a>
+							</li>
+							<li class="info__item">
+								<a href="#">View your lookbook</a>
+							</li>
+							<li class="info__item">
+								<a href="#">track an order</a>
+							</li>
+							<li class="info__item">
+								<a href="#">update information</a>
+							</li>
+						</ul>
+					</div>
+					<div class="top__content col-lg-3">
+						<h4 class="content_title">lookbook</h4>
+						<ul class="footer__info">
+							<li class="info__item">
+								<a href="#">latest posts</a>
+							</li>
+							<li class="info__item">
+								<a href="#">men's lookbook</a>
+							</li>
+							<li class="info__item">
+								<a href="#">lookbooks RSS feed</a>
+							</li>
+							<li class="info__item">
+								<a href="#">view your lookbook</a>
+							</li>
+							<li class="info__item">
+								<a href="#">delete your lookbook</a>
+							</li>
+						</ul>
+					</div>
+					<div class="top__content col-lg-3">
+						<h4 class="content_title">contact details</h4>
+						<ul class="footer__info">
+							<li class="info__item">
+								<a href="#"
+									>Head Office: Avenue Fashion, 180-182 Regent
+									Street, London.</a
+								>
+							</li>
+							<li class="info__item">
+								<a href="#"> Telephone: 0123-456-789 </a>
+							</li>
+							<li class="info__item">
+								<a href="#">Email: support@yourwebsite.com</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row footer__bottom">
+					<div class="col-lg-6 footer__box">
+						<h2 class="footer__box_title">Award winner</h2>
+						<span class="footer__box_subtitle"
+							>Fashion awards 2016</span
+						>
+					</div>
+					<div class="col-lg-6 footer__box">
+						<ul class="footer__social-links">
+							<li class="social-links_item">
+								<a href="#">
+									<i class="fab fa-facebook-f"></i
+								></a>
+							</li>
+							<li class="social-links_item">
+								<a href="#"> <i class="fab fa-twitter"></i></a>
+							</li>
+							<li class="social-links_item">
+								<a href="#">
+									<i class="fab fa-instagram-square"></i
+								></a>
+							</li>
+							<li class="social-links_item">
+								<a href="#">
+									<i class="fab fa-pinterest"></i
+								></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- footer section end -->
 
-    <!-- 
+		<!-- 
         =========== all js goes here ===========
         ** jquery
         ** popper
@@ -35,11 +594,10 @@
         ** Slick
         ** app [custom js ]
 -->
-    <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/slick.min.js"></script>
-    <script src="assets/js/app.js"></script>
-</body>
-
+		<script src="assets/js/jquery-3.5.1.slim.min.js"></script>
+		<script src="assets/js/popper.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/slick.min.js"></script>
+		<script src="assets/js/app.js"></script>
+	</body>
 </html>
