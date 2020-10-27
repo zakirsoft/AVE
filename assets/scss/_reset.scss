@@ -8,7 +8,10 @@ ul,
 ol {
 	list-style: none;
 }
-
+p {
+	margin: 0;
+	padding: 0;
+}
 a {
 	text-decoration: none;
 	&:hover {
@@ -24,6 +27,9 @@ a {
 button {
 	border: none;
 	outline: none;
+	&.btn {
+		@extend button;
+	}
 	&:hover {
 		@extend button;
 	}
@@ -38,10 +44,6 @@ button {
 body {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: map-get($weight, regular);
-}
-
-p {
-	font-size: 24px;
 }
 
 .container__lg {
