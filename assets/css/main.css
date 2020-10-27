@@ -1,10 +1,24 @@
-/* setup sass compiler start */
+/* 
+================= setup sass compiler ================
+
+
+==================== End ======================
+*/
 /* setup sass compiler end */
+/* ?? start */
+/* colors variables */
+/* colors variables end*/
+/* fontweight variables */
+/* fontweight variables end*/
+/* ?? variables */
+/* ?? variables end*/
+/* ?? end */
 /* reset default element start */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 ul,
@@ -21,6 +35,10 @@ button, button:hover, button:active, button:focus {
   outline: none;
 }
 
+body {
+  background-color: #575153;
+}
+
 p {
   font-size: 24px;
 }
@@ -32,4 +50,3 @@ p {
 /* reset default element end */
 /* ?? start */
 /* ?? end */
-/*# sourceMappingURL=main.css.map */

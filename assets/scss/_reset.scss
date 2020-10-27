@@ -1,47 +1,48 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 ul,
 ol {
-	list-style: none;
+  list-style: none;
 }
 
 a {
-	text-decoration: none;
-	&:hover {
-		@extend a;
-	}
-	&:active {
-		@extend a;
-	}
-	&:focus {
-		@extend a;
-	}
+  text-decoration: none;
+  &:hover {
+    @extend a;
+  }
+  &:active {
+    @extend a;
+  }
+  &:focus {
+    @extend a;
+  }
 }
 button {
-	border: none;
-	outline: none;
-	&:hover {
-		@extend button;
-	}
-	&:active {
-		@extend button;
-	}
-	&:focus {
-		@extend button;
-	}
+  border: none;
+  outline: none;
+  &:hover {
+    @extend button;
+  }
+  &:active {
+    @extend button;
+  }
+  &:focus {
+    @extend button;
+  }
 }
 
 body {
+  background-color: map-get($colors, primary);
 }
 
 p {
-	font-size: 24px;
+  font-size: 24px;
 }
 
 .container {
-	max-width: 1780px;
+  max-width: 1780px;
 }
