@@ -1,7 +1,51 @@
 // For Variables
 @mixin font($font-size, $line-height, $font-weight, $color) {
-  font-size: $font-size;
-  line-height: $line-height;
-  font-weight: $font-weight;
-  color: $color;
+	font-size: $font-size;
+	line-height: $line-height;
+	font-weight: $font-weight;
+	color: $color;
+}
+
+%button_after {
+	position: relative;
+	&::after {
+		content: '\f107';
+		font-weight: 900;
+		font-family: 'Font Awesome\ 5 Free';
+		border: 0;
+		position: absolute;
+		right: -2px;
+		top: 5px;
+	}
+}
+
+//  media mixin
+@mixin large {
+	@media (min-width: 1200px) and (max-width: 1600px) {
+		@content;
+	}
+}
+
+@mixin laptop {
+	@media (min-width: 992px) and (max-width: 1199px) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media (max-width: 768px) and(max-width: 991px) {
+		@content;
+	}
+}
+
+@mixin mobile {
+	@media (max-width: 767px) {
+		@content;
+	}
+}
+
+@mixin mobile_sm {
+	@media (min-width: 320px) and (max-width: 480px) {
+		@content;
+	}
 }

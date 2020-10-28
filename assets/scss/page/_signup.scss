@@ -18,6 +18,9 @@
             @include font(15px, 22px, weight(regular), color(gray));
             padding-top: 10px;
         }
+        .form-check-input{
+            margin-top: 15px;
+        }
     }
     .middle-broder{
         position: relative;
