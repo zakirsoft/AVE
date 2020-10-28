@@ -1,0 +1,61 @@
+#country{
+    .country__content_heading{
+        @include font(18px, 20px, weight(regular), color(Donjuan));
+        text-transform: uppercase;
+        padding-bottom: 10px;
+    }
+    .country__content__info{
+        @include font(13px, 20px, weight(regular), color(Dovegray));
+        text-transform: uppercase;
+    }
+    .country__content__details{
+        @include font(15px, 22px, weight(regular), color(gray));
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+}
+#country-address{
+    background: #f8f8f8;
+    padding: 0;
+    margin-bottom: 60px;
+    .country__content_heading{
+        @include font(18px, 20px, weight(regular), color(Donjuan));
+        text-transform: uppercase;
+        padding-bottom: 7px;
+        margin-top: 41px;
+    } 
+    .country__content_location{
+        @include font(15px, 22px, weight(regular), color(gray));
+        text-transform: uppercase;
+    }
+    .country__content_details,
+    .country__content_info{
+        @include font(13px, 20px, weight(regular), color(Dovegray));
+        padding-top: 8px;
+        padding-bottom: 25px;
+    }
+
+    .country__content_info{
+        li{
+            padding-bottom: 10px;
+            i{
+                margin-right: 15px;
+            }
+        }
+    }
+    .country__content_links {
+        margin-top: 23px;
+        .list-inline-item{ 
+            background: #727272;
+            border-radius: 100%;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            margin-right: 12px;
+            a{
+                color: white;
+            }
+        }
+    }
+}

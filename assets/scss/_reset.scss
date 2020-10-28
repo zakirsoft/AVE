@@ -60,3 +60,17 @@ section {
 	padding: 60px 0px;
 	z-index: 1;
 }
+.zs_btn{
+	@include font(16px, 12px, weight(regular), color(abbey));
+	padding: 22px 33px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	border: 2px solid #737373;
+	transition: all .3s ease-in;
+	background: transparent;
+	&:hover{
+		border: 2px solid transparent;
+		color: color(white);
+		background: color(eggblue);
+	}
+}

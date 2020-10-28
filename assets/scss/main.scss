@@ -10,12 +10,11 @@
 /* ?? start */
 @import './variable';
 /* ?? end */
-
+@import './mixin';
 /* reset default element start */
+
 @import './reset';
 /* reset default element end */
-
-@import './mixin';
 
 /* header  start */
 @import '../scss/components/headers';
@@ -31,6 +30,18 @@
 
 /* ?? start */
 /* ?? end */
+
+/* Brand Page start */
+@import '../scss/page/brand';
+/* Brand Page end */
+
+/* stores start */
+@import '../scss/page/stores';
+/* stores end */
+
+/* signup  start */
+@import '../scss/page/signup';
+/* signup  end */
 
 /* responsive start */
 @import '../scss/responsive';

@@ -1,0 +1,33 @@
+#contact-form{
+    .form-heading{
+        @include font(18px, 20px, weight(regular), color(Donjuan));
+        text-transform: uppercase;
+        margin-bottom: 44px;
+    }
+    .form-group{
+        .form-control{
+            width: 100%;
+            border-radius: 0;
+            height: 40px;
+            margin-bottom: 35px;
+        }
+        .higlight{
+            color: color(eggblue);
+        }
+    }
+    .middle-broder{
+        position: relative;
+        &::before{
+            position: absolute;
+            content: "";
+            width: 400px;
+            height: 1px;
+            background-color: #ced4da;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%) rotate(90deg);
+            transform: translate(-50%, -50%) rotate(90deg);
+            top: 45%;
+        }
+    }
+}
+

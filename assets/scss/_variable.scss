@@ -1,5 +1,6 @@
 /* colors variables */
 $colors: (
+	white: #fff,
 	Donjuan: #575153,
 	Dovegray: #727272,
 	Dustygray: #9a9a9a,
@@ -8,7 +9,6 @@ $colors: (
 	abbey: #454647,
 	mine: #333333,
 	boulder: #777777,
-	mineshaft: #222222,
 );
 @function color($color-name) {
 	@return map-get($map: $colors, $key: $color-name);
@@ -28,8 +28,6 @@ $weight: (
 	@return map-get($map: $weight, $key: $font-weight);
 }
 /* fontweight variables end*/
-
-
 
 /* ?? variables */
 /* ?? variables end*/

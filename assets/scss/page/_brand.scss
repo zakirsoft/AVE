@@ -1,0 +1,41 @@
+#about{
+    .about__img{
+        padding-bottom: 60px;
+       img{
+        width: 570px;
+        height: 400px;
+        object-fit: cover;
+       }
+    }
+    .mb-30{
+        padding: 0;
+        margin-bottom: 30px;
+    }
+    .about-info__text{
+       .about-info_title{
+        @include font(18px, 20px, weight(regular), color(Donjuan));
+        text-transform: uppercase;
+        padding-bottom: 12px;
+       }
+       .about-info_slogan{
+        @include font(13px, 20px, weight(regular), color(Dovegray));
+        text-transform: uppercase;
+       }
+       .about-info_text{
+        @include font(15px, 22px, weight(regular), color(gray));
+        padding-top: 10px;
+        .higlight{
+            color: color(eggblue);
+        }
+       }
+    }
+    .mt-60{
+        margin-top: 60px;
+    }
+    .about-info__sign{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 60px;
+    }
+}
