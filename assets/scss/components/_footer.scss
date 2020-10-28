@@ -1,0 +1,49 @@
+#footer__area {
+    background: #f8f8f8;
+    padding: 60px 0;
+
+    .top__content {
+        .content_title {
+            @include font(13px, 20px, weight(regular), color(Donjuan));
+            text-transform: uppercase;
+            margin-bottom: 24px;
+        }
+
+        .footer__info {
+            .info__item {
+                a {
+                    @include font(14px, 30px, weight(light), color(Dovegray));
+                    transition: .3s;
+                    &:hover{
+                        color: color(eggblue);
+                    }
+                }
+            }
+        }
+    }
+    .footer__bottom{
+        margin-top: 35px;
+        .footer__box{
+            background: color(mine);
+            padding: 50px 0;
+            .footer__box_title{
+                @include font(36px, 48px, weight(bold), color(white));
+                margin: 0;
+            }
+            .footer__box_subtitle{
+                @include font(36px, 48px, weight(light), color(white));
+            }
+        }
+        .footer__box_social{
+            background: color(eggblue);
+            padding: 50px 0;
+            .social-links_item{
+                padding: 20px 15px;
+                a{
+                    font-size: 26px;
+                    color: color(white);
+                }
+            }
+        }
+    }
+}
