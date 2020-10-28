@@ -21,89 +21,179 @@
 	<link rel="stylesheet" href="assets/css/main.css" />
 </head>
 
-<body>
-	<!-- header section start -->
-	<header>
-		<div class="header-top">
-			<div class="container container__sm">
-				<div class="header-top__content">
-					<div class="contents__box">
-						<p>Currency :</p>
-						<div class="dropdown">
-							<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								GBP
-							</button>
-							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-								<a class="dropdown-item" href="#">Action</a>
-								<a class="dropdown-item" href="#">Another action</a>
-								<a class="dropdown-item" href="#">Something else here</a>
+	<body>
+		<!-- header section start -->
+		<header>
+			<div class="header-top">
+				<div class="container container__sm">
+					<div class="header-top__content">
+						<div class="contents__box">
+							<p>Currency :</p>
+							<div class="dropdown gbp">
+								<button
+									class="btn dropdown__btn dropdown-toggle"
+									type="button"
+									id="dropdownMenuButton"
+									data-toggle="dropdown"
+									aria-haspopup="true"
+									aria-expanded="false"
+								>
+									GBP
+								</button>
+								<div
+									class="dropdown-menu"
+									aria-labelledby="dropdownMenuButton"
+								>
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#"
+										>Another action</a
+									>
+									<a class="dropdown-item" href="#"
+										>Something else here</a
+									>
+								</div>
 							</div>
 						</div>
-					</div>
-					<!-- user register/sign -->
-					<div class="contents__box">
-						<button class="contents__box_user">Register</button>
-						<button class="contents__box_user">Sign in</button>
-					</div>
-					<!-- shop cart -->
-					<div class="contents__box">
-						<div class="dropdown">
-							<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								empty
-							</button>
-							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-								<a class="dropdown-item" href="#">Action</a>
-								<a class="dropdown-item" href="#">Another action</a>
-								<a class="dropdown-item" href="#">Something else here</a>
+						<div class="d-flex">
+							<!-- user register/sign -->
+							<div class="contents__box">
+								<button class="contents__box_user">
+									Register
+								</button>
+								<button class="contents__box_user">
+									Sign in
+								</button>
+							</div>
+							<!-- shop cart -->
+							<div class="contents__box">
+								<div class="dropdown empty">
+									<button
+										class="btn dropdown__btn dropdown-toggle"
+										type="button"
+										id="dropdownMenuButton"
+										data-toggle="dropdown"
+										aria-haspopup="true"
+										aria-expanded="false"
+									>
+										empty
+									</button>
+									<div
+										class="dropdown-menu"
+										aria-labelledby="dropdownMenuButton"
+									>
+										<a class="dropdown-item" href="#"
+											>Action</a
+										>
+										<a class="dropdown-item" href="#"
+											>Another action</a
+										>
+										<a class="dropdown-item" href="#"
+											>Something else here</a
+										>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<div class="container container__lg">
-				<a class="navbar-brand" href="index.html">Avenue Fashion</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse"
-					data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-					aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
+			<nav
+				class="navbar navbar-expand-lg navbar-light bg-light position-relative py-4"
+				style="top: 0; left: 0"
+			>
+				<div class="container container__lg">
+					<a class="navbar-brand" href="index.html">
+						<span class="bold">Avenue</span> Fashion</a
+					>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-toggle="collapse"
+						data-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
 
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								Mens
-							</a>
-							<div class="dropdown-menu row" aria-labelledby="navbarDropdown">
-								<div class="col-6 dropdown-menu__lists">
-									<h2 class="menu__list_categeory">
-										Casuals
-									</h2>
-									<ul class="menu__list">
-										<li class="menu_item">
-											<a href="#">jackets</a>
-										</li>
-										<li class="menu_item">
-											<a href="#">hoodies & sweatshirts</a>
-										</li>
-										<li class="menu_item">
-											<a href="#">Polo Shirts</a>
-										</li>
-										<li class="menu_item">
-											<a href="#">Sportswear</a>
-										</li>
-										<li class="menu_item">
-											<a href="#">Trousers & Chinos</a>
-										</li>
-										<li class="menu_item">
-											<a href="#">T-Shirts</a>
-										</li>
-									</ul>
+					<div
+						class="collapse navbar-collapse"
+						id="navbarSupportedContent"
+					>
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle active"
+									href="#"
+									id="navbarDropdown"
+									role="button"
+									data-toggle="dropdown"
+									aria-haspopup="true"
+									aria-expanded="false"
+								>
+									Mens
+								</a>
+								<div
+									class="dropdown-menu row"
+									aria-labelledby="navbarDropdown"
+								>
+									<div class="col-6 dropdown-menu__lists">
+										<h2 class="menu__list_categeory">
+											Casuals
+										</h2>
+										<ul class="menu__list">
+											<li class="menu_item">
+												<a href="#">jackets</a>
+											</li>
+											<li class="menu_item">
+												<a href="#"
+													>hoodies & sweatshirts</a
+												>
+											</li>
+											<li class="menu_item">
+												<a href="#">Polo Shirts</a>
+											</li>
+											<li class="menu_item">
+												<a href="#">Sportswear</a>
+											</li>
+											<li class="menu_item">
+												<a href="#"
+													>Trousers & Chinos</a
+												>
+											</li>
+											<li class="menu_item">
+												<a href="#">T-Shirts</a>
+											</li>
+										</ul>
+									</div>
+									<div class="col-6 dropdown-menu__lists">
+										<h2 class="menu__list_categeory">
+											Formal
+										</h2>
+										<ul class="menu__list">
+											<li class="menu_item">
+												<a href="#">jackets</a>
+											</li>
+											<li class="menu_item">
+												<a href="#">Shirts</a>
+											</li>
+											<li class="menu_item">
+												<a href="#">Suits</a>
+											</li>
+											<li class="menu_item">
+												<a href="#">Trousers</a>
+											</li>
+										</ul>
+									</div>
+									<div class="col-12 dropdown-menu__lists">
+										<h4 class="offer">
+											Autumn sale!
+											<span class="off"
+												>up to 50% off</span
+											>
+										</h4>
+									</div>
 								</div>
 								<div class="col-6 dropdown-menu__lists">
 									<h2 class="menu__list_categeory">
@@ -163,228 +253,126 @@
 										</li>
 									</ul>
 								</div>
-								<div class="col-6 dropdown-menu__lists">
-									<h2 class="menu__list_categeory">
-										Formal
-									</h2>
-									<ul class="menu__list">
-										<li class="menu_item">
-											<a href="#">jackets</a>
-										</li>
-										<li class="menu_item">
-											<a href="#">Shirts</a>
-										</li>
-										<li class="menu_item">
-											<a href="#">Suits</a>
-										</li>
-										<li class="menu_item">
-											<a href="#">Trousers</a>
-										</li>
-									</ul>
-								</div>
-								<div class="col-12 dropdown-menu__lists">
-									<h4 class="offer">
-										Autumn sale!
-										<span class="off">up to 50% off</span>
-									</h4>
-								</div>
-							</div>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="brand.html">The Brand</a>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								Local Stores
-							</a>
-							<div class="dropdown-menu row" aria-labelledby="navbarDropdown">
-								<div class="col-6 dropdown-menu__lists">
-									<h2 class="menu__list_categeory">
-										Casuals
-									</h2>
-									<ul class="menu__list">
-										<li class="menu_item">
-											<a href="#">jackets</a>
-										</li>
-										<li class="menu_item">
-											<a href="#">hoodies & sweatshirts</a>
-										</li>
-										<li class="menu_item">
-											<a href="#">Polo Shirts</a>
-										</li>
-										<li class="menu_item">
-											<a href="#">Sportswear</a>
-										</li>
-										<li class="menu_item">
-											<a href="#">Trousers & Chinos</a>
-										</li>
-										<li class="menu_item">
-											<a href="#">T-Shirts</a>
-										</li>
-									</ul>
-								</div>
-								<div class="col-6 dropdown-menu__lists">
-									<h2 class="menu__list_categeory">
-										Formal
-									</h2>
-									<ul class="menu__list">
-										<li class="menu_item">
-											<a href="#">jackets</a>
-										</li>
-										<li class="menu_item">
-											<a href="#">Shirts</a>
-										</li>
-										<li class="menu_item">
-											<a href="#">Suits</a>
-										</li>
-										<li class="menu_item">
-											<a href="#">Trousers</a>
-										</li>
-									</ul>
-								</div>
-								<div class="col-12 dropdown-menu__lists">
-									<h4 class="offer">
-										Autumn sale!
-										<span class="off">up to 50% off</span>
-									</h4>
-								</div>
-							</div>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								Look Book
-							</a>
-							<div class="dropdown-menu row" aria-labelledby="navbarDropdown">
-								<div class="col-6 dropdown-menu__lists">
-									<h2 class="menu__list_categeory">
-										Casuals
-									</h2>
-									<ul class="menu__list">
-										<li class="menu_item">
-											<a href="#">jackets</a>
-										</li>
-										<li class="menu_item">
-											<a href="#">hoodies & sweatshirts</a>
-										</li>
-										<li class="menu_item">
-											<a href="#">Polo Shirts</a>
-										</li>
-										<li class="menu_item">
-											<a href="#">Sportswear</a>
-										</li>
-										<li class="menu_item">
-											<a href="#">Trousers & Chinos</a>
-										</li>
-										<li class="menu_item">
-											<a href="#">T-Shirts</a>
-										</li>
-									</ul>
-								</div>
-								<div class="col-6 dropdown-menu__lists">
-									<h2 class="menu__list_categeory">
-										Formal
-									</h2>
-									<ul class="menu__list">
-										<li class="menu_item">
-											<a href="#">jackets</a>
-										</li>
-										<li class="menu_item">
-											<a href="#">Shirts</a>
-										</li>
-										<li class="menu_item">
-											<a href="#">Suits</a>
-										</li>
-										<li class="menu_item">
-											<a href="#">Trousers</a>
-										</li>
-									</ul>
-								</div>
-								<div class="col-12 dropdown-menu__lists">
-									<h4 class="offer">
-										Autumn sale!
-										<span class="off">up to 50% off</span>
-									</h4>
-								</div>
-							</div>
-						</li>
-					</ul>
-					<form class="form-inline my-2 my-lg-0">
-						<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-						<button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-							Search...
-						</button>
-					</form>
+							</li>
+						</ul>
+						<form class="form-inline my-2 my-lg-0 our__search">
+							<input
+								class="form-control mr-sm-2"
+								type="search"
+								placeholder="Search..."
+								aria-label="Search"
+							/>
+							<button class="btn my-2 my-sm-0" type="submit">
+								Search...
+							</button>
+						</form>
+					</div>
 				</div>
-			</div>
-		</nav>
-	</header>
-	<!-- header section end -->
-
-	<!-- banner section start -->
-	<section id="sub-banner">
-		<div class="container container__lg">
-			<div class="row sub-banner__content">
-				<h2 class="sub-banner_title">
-					<span class="bold">The</span>
-					Brand
-				</h2>
-				<span class="sub-banner_slogan">company slogan goes here</span>
+			</nav>
+		</header>
+		<!-- header section end -->
+		<!-- banner section start -->
+		<section id="sub-banner">
+			<div class="container container__lg">
+				<div class="row sub-banner__content">
+					<h2 class="sub-banner_title">
+						<span class="bold">The</span>
+						Brand
+					</h2>
+					<span class="sub-banner_slogan"
+						>company slogan goes here</span
+					>
+				</div>
 			</div>
 		</div>
 	</section>
 	<!-- banner section end -->
 
-	<!-- Signup section start -->
-	<section id="contact-form">
-		<div class="container container__sm">
-			<div class="row middle-broder">
-				<div class="col-lg-6">
-					<h4 class="form-heading">sign in</h4>
-					<form>
-						<div class="form-group">
-							<input type="email" class="form-control" id="signup-email" aria-describedby="emailHelp"
-								placeholder="Your Email..">
-						</div>
-						<div class="form-group">
-							<input type="password" class="form-control" id="signup-password"
-								placeholder="Your password..">
-						</div>
-						<div class="form-group form-check pl-0 d-flex align-items-center justify-content-between">
-							<button class="zs_btn">sign in</button>
-							<a class="btn  float-right higlight">Forgot your Password <i
-									class="fas fa-long-arrow-alt-right"></i></a>
-						</div>
-
-					</form>
-				</div>
-				<div class="col-lg-6">
-					<h4 class="form-heading">Register</h4>
-					<form>
-						<div class="form-group">
-							<input type="email" class="form-control" id="register-email" aria-describedby="emailHelp"
-								placeholder="Your Email..">
-						</div>
-						<div class="form-group">
-							<input type="password" class="form-control" id="register-password"
-								placeholder="Your password..">
-						</div>
-						<div class="form-group">
-							<input type="password" class="form-control" id="register-password-confirm"
-								placeholder="Confirm password..">
-						</div>
-						<div class="form-group form-check">
-							<input type="checkbox" class="form-check-input" id="exampleCheck1">
-							<label class="form-check-label" for="exampleCheck1">Sign up for exclusive updates,
-								discounts, new arrivals, contests, and more!</label>
-						</div>
-						<div class="form-group form-check pl-0">
-							<button class="zs_btn">Create Account</button>
-							<a class="btn  float-right">By clicking ‘Create Account’, you<br>
-								agree to our <span class="higlight">Privacy Policy<i class="fas fa-long-arrow-alt-right"></i></span></a>
-						</div>
-					</form>
+		<!-- Signup section start -->
+		<section>
+			<div class="container container__sm">
+				<div class="row">
+					<div class="col-lg-6">
+						<h4>sign in</h4>
+						<form>
+							<div class="form-group">
+								<input
+									type="email"
+									class="form-control"
+									id="signup-email"
+									aria-describedby="emailHelp"
+									placeholder="Your Email.."
+								/>
+							</div>
+							<div class="form-group">
+								<input
+									type="password"
+									class="form-control"
+									id="signup-password"
+									placeholder="Your password.."
+								/>
+							</div>
+							<div class="form-group form-check pl-0">
+								<button class="zs_btn">Create Account</button>
+								<a class="btn float-right"
+									>Forgot your Password
+									<i class="fas fa-long-arrow-alt-right"></i
+								></a>
+							</div>
+						</form>
+					</div>
+					<div class="col-lg-6">
+						<h4>Register</h4>
+						<form>
+							<div class="form-group">
+								<input
+									type="email"
+									class="form-control"
+									id="register-email"
+									aria-describedby="emailHelp"
+									placeholder="Your Email.."
+								/>
+							</div>
+							<div class="form-group">
+								<input
+									type="password"
+									class="form-control"
+									id="register-password"
+									placeholder="Your password.."
+								/>
+							</div>
+							<div class="form-group">
+								<input
+									type="password"
+									class="form-control"
+									id="register-password-confirm"
+									placeholder="Confirm password.."
+								/>
+							</div>
+							<div class="form-group form-check">
+								<input
+									type="checkbox"
+									class="form-check-input"
+									id="exampleCheck1"
+								/>
+								<label
+									class="form-check-label"
+									for="exampleCheck1"
+									>Sign up for exclusive updates, discounts,
+									new arrivals, contests, and more!</label
+								>
+							</div>
+							<div class="form-group form-check pl-0">
+								<button class="zs_btn">Create Account</button>
+								<a class="btn float-right"
+									>By clicking ‘Create Account’, you agree to
+									our Privacy Policy<i
+										class="fas fa-long-arrow-alt-right"
+									></i
+								></a>
+							</div>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>
