@@ -16,10 +16,10 @@
         }
         .lable-title{
             @include font(15px, 22px, weight(regular), color(gray));
-            padding-top: 10px;
+            margin-bottom: 12px;
         }
-        .form-check-input{
-            margin-top: 15px;
+        .btn-title{
+            @include font(15px, 22px, weight(regular), color(gray));
         }
     }
     .middle-broder{
