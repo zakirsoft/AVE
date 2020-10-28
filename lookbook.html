@@ -16,7 +16,7 @@
 		<link rel="stylesheet" href="assets/css/all.min.css" />
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="assets/css/slick.css" />
-		<link rel="stylesheet" href="assets/css/normalize.css">
+		<link rel="stylesheet" href="assets/css/normalize.css" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 
@@ -96,10 +96,7 @@
 					</div>
 				</div>
 			</div>
-			<nav
-				class="navbar navbar-expand-lg navbar-light bg-light position-relative py-4"
-				style="top: 0; left: 0"
-			>
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
 				<div class="container container__lg">
 					<a class="navbar-brand" href="index.html">
 						<span class="bold">Avenue</span> Fashion</a
@@ -2695,10 +2692,11 @@
 		<!-- ?? section start -->
 
 		<!-- ?? section end -->
+
 		<!-- LOOK section start -->
-		<section id="look">
-			<div class="container container__lg">
-				<div class="row looks__content">
+		<section id="look" class="d-none d-md-block">
+			<div class="container-fluid">
+				<div class="row look__content">
 					<div class="col-lg-4">
 						<div class="row look__item">
 							<div class="col-12">
@@ -2711,7 +2709,8 @@
 									<div class="overlay__content">
 										<div class="looks__text">
 											<h2 class="looks_title">
-												Men's lookbook
+												<span class="bold">Men's</span>
+												lookbook
 											</h2>
 											<p class="looks_text">
 												Pellentesque habitant morbi
@@ -2739,7 +2738,10 @@
 									<div class="overlay__content">
 										<div class="looks__text">
 											<h2 class="looks_title">
-												woMen's lookbook
+												<span class="bold"
+													>WoMen's</span
+												>
+												lookbook
 											</h2>
 											<p class="looks_text">
 												Pellentesque habitant morbi
@@ -2767,7 +2769,8 @@
 									<div class="overlay__content">
 										<div class="looks__text">
 											<h2 class="looks_title">
-												your lookbook
+												<span class="bold">Your</span>
+												lookbook
 											</h2>
 											<p class="looks_text">
 												Pellentesque habitant morbi
@@ -2786,7 +2789,72 @@
 				</div>
 			</div>
 		</section>
-		<!-- LOOK section end -->
+		<!-- look for mobile device start -->
+		<section id="look-sm" class="d-block d-md-none">
+			<div class="container">
+				<div class="look__content row">
+					<div class="look_img col-12">
+						<img src="assets/images/look/look-1.jpg" alt="" />
+					</div>
+					<div class="overlay__content col-12">
+						<div class="looks__textcontent">
+							<h2 class="looks_title">
+								<span class="bold">Men's</span>
+								lookbook
+							</h2>
+							<p class="looks_text">
+								Pellentesque habitant morbi tristique senectus
+								et netus et malesuada fames . Pellentesque
+								laoreet quis enim et mattis. Quisque interdum
+								felis tellus.
+							</p>
+						</div>
+						<button class="zs_btn">View NOW</button>
+					</div>
+				</div>
+				<div class="look__content row">
+					<div class="look_img col-12">
+						<img src="assets/images/look/look-2.jpg" alt="" />
+					</div>
+					<div class="overlay__content col-12">
+						<div class="looks__textcontent">
+							<h2 class="looks_title">
+								<span class="bold">woMen's</span>
+								lookbook
+							</h2>
+							<p class="looks_text">
+								Pellentesque habitant morbi tristique senectus
+								et netus et malesuada fames . Pellentesque
+								laoreet quis enim et mattis. Quisque interdum
+								felis tellus.
+							</p>
+						</div>
+						<button class="zs_btn">View NOW</button>
+					</div>
+				</div>
+				<div class="look__content row">
+					<div class="look_img col-12">
+						<img src="assets/images/look/look-3.jpg" alt="" />
+					</div>
+					<div class="overlay__content col-12">
+						<div class="looks__textcontent">
+							<h2 class="looks_title">
+								<span class="bold">Your</span>
+								lookbook
+							</h2>
+							<p class="looks_text">
+								Pellentesque habitant morbi tristique senectus
+								et netus et malesuada fames . Pellentesque
+								laoreet quis enim et mattis. Quisque interdum
+								felis tellus.
+							</p>
+						</div>
+						<button class="zs_btn">View NOW</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- look for mobile device  end-->
 
 		<!-- footer section start -->
 		<footer>

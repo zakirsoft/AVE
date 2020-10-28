@@ -2,4 +2,11 @@
 	position: relative;
 	background: url('../images/banner/banner.png') top center/cover no-repeat;
 	height: 100vh;
+	.container {
+		.banner__btn {
+			position: absolute;
+			bottom: 10%;
+			right: 15%;
+		}
+	}
 }

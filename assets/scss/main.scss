@@ -7,6 +7,8 @@
 
 /* setup sass compiler end */
 
+@import './fonts';
+
 /* ?? start */
 @import './variable';
 /* ?? end */
@@ -23,10 +25,18 @@
 /* Banner start */
 @import '../scss/components/banner';
 /* Banner end */
+/* Banner start */
+@import '../scss/components/products';
+/* Banner end */
 
 /* sub-Banner start */
 @import '../scss/components/sub-banner';
 /* sub-Banner end */
+
+/* look start */
+@import '../scss/components/_look';
+
+/* look end */
 
 /* ?? start */
 /* ?? end */

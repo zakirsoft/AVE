@@ -1,0 +1,33 @@
+#look {
+	.look__content {
+		.look__item {
+			.look__img {
+				position: relative;
+				background-color: #f8f8f8;
+				.overlay__content {
+					position: absolute;
+					top: 50%;
+					right: 60px;
+					text-align: right;
+					transform: translate(0%, -50%);
+
+					.looks__textcontent {
+						.looks_title {
+							@include font(48px, 54px, null, color(Donjuan));
+							text-transform: uppercase;
+							.bold {
+								display: block;
+								font-weight: weight(bold);
+							}
+						}
+						.looks_text {
+							margin: 12px 0px;
+							white-space: pre;
+							@include font(15px, 22px, null, #727272);
+						}
+					}
+				}
+			}
+		}
+	}
+}
