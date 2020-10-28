@@ -31,7 +31,8 @@ header .header-top__content .contents__box .dropdown.empty .dropdown__btn::after
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 ul,
@@ -55,7 +56,8 @@ button, button.btn, button:hover, button:active, button:focus {
 
 img {
   max-width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 body {
@@ -85,6 +87,7 @@ section {
   text-transform: uppercase;
   letter-spacing: 3px;
   border: 2px solid #737373;
+  -webkit-transition: all .3s ease-in;
   transition: all .3s ease-in;
   background: transparent;
 }
@@ -112,11 +115,17 @@ header .header-top {
 }
 
 header .header-top__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 header .header-top__content .contents__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -134,7 +143,8 @@ header .header-top__content .contents__box .dropdown__btn {
 
 header .header-top__content .contents__box .dropdown__btn:focus {
   outline: none;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 header .header-top__content .contents__box .dropdown.empty {
@@ -212,6 +222,8 @@ header .navbar-nav .nav-item .nav-link::after {
 }
 
 header .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 468px;
   top: 140%;
@@ -273,7 +285,8 @@ header .navbar .our__search input {
 
 header .navbar .our__search input:focus {
   outline: none;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 header .navbar .our__search button {
@@ -294,7 +307,8 @@ header .navbar .our__search button::after {
 }
 
 header .navbar .our__search button:focus {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   outline: none;
 }
 
@@ -325,7 +339,8 @@ header .navbar .our__search button:focus {
 #about .about__img img {
   width: 570px;
   height: 400px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #about .mb-30 {
@@ -367,9 +382,13 @@ header .navbar .our__search button:focus {
 }
 
 #about .about-info__sign {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin-top: 60px;
 }
 
@@ -494,6 +513,7 @@ header .navbar .our__search button:focus {
   height: 1px;
   background-color: #ced4da;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(90deg);
   transform: translate(-50%, -50%) rotate(90deg);
   top: 45%;
 }
@@ -543,6 +563,8 @@ header .navbar .our__search button:focus {
     left: 100%;
   }
   header .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 590px;
     top: 140%;

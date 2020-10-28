@@ -16,7 +16,7 @@
 		<link rel="stylesheet" href="assets/css/all.min.css" />
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="assets/css/slick.css" />
-		<link rel="stylesheet" href="assets/css/normalize.css">
+		<link rel="stylesheet" href="assets/css/normalize.css" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 
@@ -28,9 +28,9 @@
 					<div class="header-top__content">
 						<div class="contents__box">
 							<p>Currency :</p>
-							<div class="dropdown">
+							<div class="dropdown gbp">
 								<button
-									class="btn btn-secondary dropdown-toggle"
+									class="btn dropdown__btn dropdown-toggle"
 									type="button"
 									id="dropdownMenuButton"
 									data-toggle="dropdown"
@@ -65,9 +65,9 @@
 							</div>
 							<!-- shop cart -->
 							<div class="contents__box">
-								<div class="dropdown">
+								<div class="dropdown empty">
 									<button
-										class="btn btn-secondary dropdown-toggle"
+										class="btn dropdown__btn dropdown-toggle"
 										type="button"
 										id="dropdownMenuButton"
 										data-toggle="dropdown"
@@ -98,7 +98,9 @@
 			</div>
 			<nav class="navbar navbar-expand-lg navbar-light bg-light">
 				<div class="container container__lg">
-					<a class="navbar-brand" href="index.html">Avenue Fashion</a>
+					<a class="navbar-brand" href="index.html">
+						<span class="bold">Avenue</span> Fashion</a
+					>
 					<button
 						class="navbar-toggler"
 						type="button"
@@ -118,7 +120,7 @@
 						<ul class="navbar-nav ml-auto">
 							<li class="nav-item dropdown">
 								<a
-									class="nav-link dropdown-toggle"
+									class="nav-link dropdown-toggle active"
 									href="#"
 									id="navbarDropdown"
 									role="button"
@@ -418,17 +420,14 @@
 								</div>
 							</li>
 						</ul>
-						<form class="form-inline my-2 my-lg-0">
+						<form class="form-inline my-2 my-lg-0 our__search">
 							<input
 								class="form-control mr-sm-2"
 								type="search"
-								placeholder="Search"
+								placeholder="Search..."
 								aria-label="Search"
 							/>
-							<button
-								class="btn btn-outline-success my-2 my-sm-0"
-								type="submit"
-							>
+							<button class="btn my-2 my-sm-0" type="submit">
 								Search...
 							</button>
 						</form>

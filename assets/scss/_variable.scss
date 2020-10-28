@@ -1,30 +1,31 @@
 /* colors variables */
 $colors: (
-  white: #fff,
-  Donjuan: #575153,
-  Dovegray: #727272,
-  Dustygray: #9a9a9a,
-  gray: #8c8c8c,
-  eggblue: #00c8c8,
-  abbey: #454647,
-  mine: #333333,
-  boulder: #777777,
+	white: #fff,
+	Donjuan: #575153,
+	Dovegray: #727272,
+	Dustygray: #9a9a9a,
+	gray: #8c8c8c,
+	eggblue: #00c8c8,
+	abbey: #454647,
+	mine: #333333,
+	boulder: #777777,
 );
 @function color($color-name) {
-  @return map-get($map: $colors, $key: $color-name);
+	@return map-get($map: $colors, $key: $color-name);
 }
 /* colors variables end*/
 
 /* fontweight variables */
 $weight: (
-  'regular': 400,
-  'medium': 500,
-  'semi-bold': 600,
-  'bold': 700,
-  'extra-bold': 800,
+	'light': 300,
+	'regular': 400,
+	'medium': 500,
+	'semi-bold': 600,
+	'bold': 700,
+	'extra-bold': 800,
 );
 @function weight($font-weight) {
-  @return map-get($map: $weight, $key: $font-weight);
+	@return map-get($map: $weight, $key: $font-weight);
 }
 /* fontweight variables end*/
 

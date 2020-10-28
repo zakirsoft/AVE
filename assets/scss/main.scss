@@ -16,7 +16,6 @@
 @import './reset';
 /* reset default element end */
 
-
 /* header  start */
 @import '../scss/components/headers';
 /* header  end */
@@ -29,10 +28,12 @@
 @import '../scss/components/sub-banner';
 /* sub-Banner end */
 
+/* ?? start */
+/* ?? end */
+
 /* Brand Page start */
 @import '../scss/page/brand';
 /* Brand Page end */
-
 
 /* stores start */
 @import '../scss/page/stores';
@@ -41,3 +42,7 @@
 /* signup  start */
 @import '../scss/page/signup';
 /* signup  end */
+
+/* responsive start */
+@import '../scss/responsive';
+/* responsive end */
