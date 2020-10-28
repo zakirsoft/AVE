@@ -293,6 +293,14 @@ header .header-top__content .contents__box .dropdown .btn {
   color: #00c8c8;
 }
 
+#contact-form .form-group .lable-title {
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #8c8c8c;
+  padding-top: 10px;
+}
+
 #contact-form .middle-broder {
   position: relative;
 }
