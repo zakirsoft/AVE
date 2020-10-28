@@ -1,27 +1,31 @@
 header {
-	position: sticky;
-	top: -20px;
-	left: 0;
-	z-index: 9999;
+  position: sticky;
+  top: -20px;
+  left: 0;
+  z-index: 9999;
 
-	.header-top {
-		// background-color: #333333;
-		background-color: map-get($map: $colors, $key: mine);
+  .header-top {
+    // background-color: #333333;
+    // background-color: map-get($map: $colors, $key: mine);
+    // color: map-get($map: $color, $key: )
+    background-color: color(mine);
+    &__content {
+      display: flex;
+      justify-content: space-between;
 
-		&__content {
-			display: flex;
-			justify-content: space-between;
-
-			.contents__box {
-				display: flex;
-				.dropdown {
-					.btn {
-						background-color: transparent;
-						border: 0;
-						outline: none;
-					}
-				}
-			}
-		}
-	}
+      .contents__box {
+        display: flex;
+        p {
+          @include font(16px, 28px, null, color(boulder));
+        }
+        .dropdown {
+          .btn {
+            background-color: transparent;
+            border: 0;
+            outline: none;
+          }
+        }
+      }
+    }
+  }
 }

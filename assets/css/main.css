@@ -17,7 +17,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 ul,
@@ -60,6 +61,7 @@ section {
 /* reset default element end */
 /* header  start */
 header {
+  position: -webkit-sticky;
   position: sticky;
   top: -20px;
   left: 0;
@@ -71,12 +73,24 @@ header .header-top {
 }
 
 header .header-top__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 header .header-top__content .contents__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+}
+
+header .header-top__content .contents__box p {
+  font-size: 16px;
+  line-height: 28px;
+  color: #777777;
 }
 
 header .header-top__content .contents__box .dropdown .btn {
@@ -104,4 +118,3 @@ header .header-top__content .contents__box .dropdown .btn {
 /* sub-Banner end */
 /* ?? start */
 /* ?? end */
-/*# sourceMappingURL=main.css.map */
