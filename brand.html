@@ -28,9 +28,9 @@
 					<div class="header-top__content">
 						<div class="contents__box">
 							<p>Currency :</p>
-							<div class="dropdown">
+							<div class="dropdown gbp">
 								<button
-									class="btn btn-secondary dropdown-toggle"
+									class="btn dropdown__btn dropdown-toggle"
 									type="button"
 									id="dropdownMenuButton"
 									data-toggle="dropdown"
@@ -53,44 +53,57 @@
 								</div>
 							</div>
 						</div>
-						<!-- user register/sign -->
-						<div class="contents__box">
-							<button class="contents__box_user">Register</button>
-							<button class="contents__box_user">Sign in</button>
-						</div>
-						<!-- shop cart -->
-						<div class="contents__box">
-							<div class="dropdown">
-								<button
-									class="btn btn-secondary dropdown-toggle"
-									type="button"
-									id="dropdownMenuButton"
-									data-toggle="dropdown"
-									aria-haspopup="true"
-									aria-expanded="false"
-								>
-									empty
+						<div class="d-flex">
+							<!-- user register/sign -->
+							<div class="contents__box">
+								<button class="contents__box_user">
+									Register
 								</button>
-								<div
-									class="dropdown-menu"
-									aria-labelledby="dropdownMenuButton"
-								>
-									<a class="dropdown-item" href="#">Action</a>
-									<a class="dropdown-item" href="#"
-										>Another action</a
+								<button class="contents__box_user">
+									Sign in
+								</button>
+							</div>
+							<!-- shop cart -->
+							<div class="contents__box">
+								<div class="dropdown empty">
+									<button
+										class="btn dropdown__btn dropdown-toggle"
+										type="button"
+										id="dropdownMenuButton"
+										data-toggle="dropdown"
+										aria-haspopup="true"
+										aria-expanded="false"
 									>
-									<a class="dropdown-item" href="#"
-										>Something else here</a
+										empty
+									</button>
+									<div
+										class="dropdown-menu"
+										aria-labelledby="dropdownMenuButton"
 									>
+										<a class="dropdown-item" href="#"
+											>Action</a
+										>
+										<a class="dropdown-item" href="#"
+											>Another action</a
+										>
+										<a class="dropdown-item" href="#"
+											>Something else here</a
+										>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<nav
+				class="navbar navbar-expand-lg navbar-light bg-light position-relative py-4"
+				style="top: 0; left: 0"
+			>
 				<div class="container container__lg">
-					<a class="navbar-brand" href="index.html">Avenue Fashion</a>
+					<a class="navbar-brand" href="index.html">
+						<span class="bold">Avenue</span> Fashion</a
+					>
 					<button
 						class="navbar-toggler"
 						type="button"
@@ -110,7 +123,7 @@
 						<ul class="navbar-nav ml-auto">
 							<li class="nav-item dropdown">
 								<a
-									class="nav-link dropdown-toggle"
+									class="nav-link dropdown-toggle active"
 									href="#"
 									id="navbarDropdown"
 									role="button"
@@ -410,17 +423,14 @@
 								</div>
 							</li>
 						</ul>
-						<form class="form-inline my-2 my-lg-0">
+						<form class="form-inline my-2 my-lg-0 our__search">
 							<input
 								class="form-control mr-sm-2"
 								type="search"
-								placeholder="Search"
+								placeholder="Search..."
 								aria-label="Search"
 							/>
-							<button
-								class="btn btn-outline-success my-2 my-sm-0"
-								type="submit"
-							>
+							<button class="btn my-2 my-sm-0" type="submit">
 								Search...
 							</button>
 						</form>
@@ -429,7 +439,6 @@
 			</nav>
 		</header>
 		<!-- header section end -->
-
 		<!-- banner section start -->
 		<section id="sub-banner">
 			<div class="container container__lg">

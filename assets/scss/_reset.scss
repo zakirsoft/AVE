@@ -40,7 +40,10 @@ button {
 		@extend button;
 	}
 }
-
+img {
+	max-width: 100%;
+	object-fit: cover;
+}
 body {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: map-get($weight, regular);

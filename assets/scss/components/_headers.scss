@@ -1,31 +1,201 @@
 header {
-  position: sticky;
-  top: -20px;
-  left: 0;
-  z-index: 9999;
+	position: relative;
+	.header-top {
+		background-color: color(mine);
+		// color: color(boulder);
+		height: 45px;
+		line-height: 45px;
+		@include font(13px, 21px, weight(regular), color(boulder));
+		&__content {
+			display: flex;
+			justify-content: space-between;
 
-  .header-top {
-    // background-color: #333333;
-    // background-color: map-get($map: $colors, $key: mine);
-    // color: map-get($map: $color, $key: )
-    background-color: color(mine);
-    &__content {
-      display: flex;
-      justify-content: space-between;
+			.contents__box {
+				display: flex;
 
-      .contents__box {
-        display: flex;
-        p {
-          @include font(16px, 28px, null, color(boulder));
-        }
-        .dropdown {
-          .btn {
-            background-color: transparent;
-            border: 0;
-            outline: none;
-          }
-        }
-      }
-    }
-  }
+				p {
+					@include font(13px, 45px, null, color(boulder));
+				}
+				.dropdown {
+					&__btn {
+						@include font(13px, 30px, null, color(boulder));
+						&:focus {
+							outline: none;
+							box-shadow: none;
+						}
+					}
+
+					&.empty {
+						background: color(eggblue);
+						width: 147px;
+						text-align: center;
+
+						.dropdown__btn {
+							color: #fff;
+							@extend %button_after;
+
+							&::before {
+								content: '\f07a';
+								font-weight: 900;
+								font-family: 'Font Awesome\ 5 Free';
+								margin-right: 10px;
+							}
+						}
+					}
+					&.gbp {
+						.dropdown__btn {
+							// position: relative;
+							// &::after {
+							// 	content: '\f107';
+							// 	font-weight: 900;
+							// 	font-family: 'Font Awesome\ 5 Free';
+							// 	border: 0;
+							// }
+							@extend %button_after;
+						}
+					}
+				}
+
+				&_user {
+					background: transparent;
+					color: color(boulder);
+					margin: 0px 18px;
+				}
+			}
+		}
+	}
+	.navbar {
+		background: transparent !important;
+		position: absolute;
+		top: 70px;
+		left: 0;
+		width: 100%;
+		z-index: 999;
+		&-brand {
+			@include font(24px, auto, weight(light), color(mineshaft));
+			text-transform: uppercase;
+			.bold {
+				font-weight: weight(bold);
+			}
+		}
+		&-nav {
+			margin-right: 80px;
+			.nav-item {
+				margin: 0px 30px;
+				&:nth-child(3) {
+					.nav-link {
+						&::after {
+							display: none;
+						}
+					}
+				}
+				.nav-link {
+					@include font(13px, 20px, weight(bold), color(mineshaft));
+					@extend %button_after;
+					&.active {
+						color: color(eggblue);
+					}
+					&:hover {
+						color: color(eggblue);
+					}
+					&::after {
+						top: 28px;
+						left: 0;
+					}
+				}
+
+				&.dropdown {
+					&:hover {
+						.dropdown-menu {
+							display: flex;
+							width: 468px;
+							top: 140%;
+							padding: 30px;
+							&.show {
+								display: none !important;
+								background: red;
+							}
+							&__lists {
+								.menu__list_categeory {
+									@include font(
+										14px,
+										20px,
+										weight(bold),
+										color(Donjuan)
+									);
+									text-transform: uppercase;
+									margin-bottom: 22px;
+								}
+								.menu__list {
+									.menu_item {
+										a {
+											@include font(
+												12px,
+												30px,
+												null,
+												color(Dovegray)
+											);
+											text-transform: capitalize;
+
+											&:hover {
+												text-decoration: underline;
+											}
+										}
+									}
+								}
+								&:nth-child(3) {
+									background-color: #333333;
+									text-align: center;
+									margin-top: 60px;
+									padding: 65px 50px;
+									.offer {
+										@include font(
+											36px,
+											48px,
+											weight(bold),
+											#fff
+										);
+										text-transform: uppercase;
+										span {
+											display: block;
+											font-weight: 400;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.our__search {
+			position: relative;
+			input {
+				border: 1px solid #e7e7e7;
+				&:focus {
+					outline: none;
+					box-shadow: none;
+				}
+			}
+			button {
+				position: absolute;
+				top: 0;
+				right: 20px;
+				font-size: 0px;
+				&::after {
+					content: '\f002';
+					font-weight: 900;
+					font-family: 'Font Awesome\ 5 Free';
+					font-size: 18px;
+					position: absolute;
+					right: 0px;
+					color: #989898;
+				}
+				&:focus {
+					box-shadow: none;
+					outline: none;
+				}
+			}
+		}
+	}
 }
