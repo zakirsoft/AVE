@@ -2,4 +2,30 @@
 	position: relative;
 	background: url('../images/banner/about.jpg') top center/cover no-repeat;
 	height: 45vh;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	z-index: 1;
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.6);
+		z-index: -1;
+	}
+	.container {
+		.sub-banner__content {
+			justify-content: center;
+
+			.sub-banner_title {
+				@extend %banner_sub;
+			}
+			.sub-banner_slogan {
+				@extend %slogan;
+			}
+		}
+	}
 }

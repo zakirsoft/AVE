@@ -96,7 +96,10 @@
 					</div>
 				</div>
 			</div>
-			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<nav
+				class="navbar navbar-expand-lg navbar-light bg-light position-relative py-4"
+				style="top: 0; left: 0"
+			>
 				<div class="container container__lg">
 					<a class="navbar-brand" href="index.html">
 						<span class="bold">Avenue</span> Fashion</a
@@ -461,15 +464,15 @@
 					id="myTab"
 					role="tablist"
 				>
-					<li class="nav-item products__item">
+					<li class="nav-item products__item_link">
 						<a
-							class="nav-link products__item_link active"
+							class="nav-link active"
 							id="latest-tab"
 							data-toggle="tab"
 							href="#latest"
 							role="tab"
 							aria-controls="latest"
-							aria-selected="true"
+							aria-selected="false"
 							>latest</a
 						>
 					</li>
@@ -533,11 +536,14 @@
 							<div class="col-lg-6">
 								<div class="row products__items">
 									<div class="col-lg-6">
-										<div class="product__img">
-											<img
-												src="assets/images/products/Mens/t-shirt-1.jpg"
-												alt="mens"
-											/>
+										<div class="products__card">
+											<div class="product__img">
+												<img
+													src="assets/images/products/Mens/t-shirt-1.jpg"
+													alt="mens"
+													class="img-fluid"
+												/>
+											</div>
 											<div class="products__overlay">
 												<h4 class="products_name">
 													Womens Burn orange casual
@@ -585,11 +591,13 @@
 										</div>
 									</div>
 									<div class="col-lg-6">
-										<div class="product__img">
-											<img
-												src="assets/images/products/girls/t-shirt-1.jpg"
-												alt="mens"
-											/>
+										<div class="products__card">
+											<div class="product__img">
+												<img
+													src="assets/images/products/girls/t-shirt-1.jpg"
+													alt="mens"
+												/>
+											</div>
 											<div class="products__overlay">
 												<h4 class="products_name">
 													Womens Burn orange casual
@@ -639,11 +647,14 @@
 								</div>
 								<div class="row products__items">
 									<div class="col-lg-6">
-										<div class="product__img">
-											<img
-												src="assets/images/products/Mens/t-shirt-2-sm.jpg"
-												alt="mens"
-											/>
+										<div class="products__card">
+											<div class="product__img">
+												<img
+													src="assets/images/products/Mens/t-shirt-2-sm.jpg"
+													alt="mens"
+													class="img-fluid"
+												/>
+											</div>
 											<div class="products__overlay">
 												<h4 class="products_name">
 													Womens Burn orange casual
@@ -691,11 +702,14 @@
 										</div>
 									</div>
 									<div class="col-lg-6">
-										<div class="product__img">
-											<img
-												src="assets/images/products/Mens/t-shirt-3-sm.jpg"
-												alt="mens"
-											/>
+										<div class="products__card">
+											<div class="product__img">
+												<img
+													src="assets/images/products/Mens/t-shirt-3-sm.jpg"
+													alt="mens"
+													class="img-fluid"
+												/>
+											</div>
 											<div class="products__overlay">
 												<h4 class="products_name">
 													Womens Burn orange casual
@@ -747,7 +761,7 @@
 							<div class="col-lg-6">
 								<div class="row products__items">
 									<div class="col-12">
-										<div class="product__img">
+										<div class="product__img mb-lg-4">
 											<img
 												src="assets/images/banner/jane.jpg"
 												alt="mens"
@@ -756,7 +770,10 @@
 												class="products__overlay content__text"
 											>
 												<h4 class="content_title">
-													jane's lookbook
+													<div class="bold">
+														jane's
+													</div>
+													lookbook
 												</h4>
 												<span class="content_subtitle"
 													>get the look for under
@@ -782,11 +799,13 @@
 								</div>
 								<div class="row products__items">
 									<div class="col-lg-6">
-										<div class="product__img">
-											<img
-												src="assets/images/products/girls/t-shirt-2.jpg"
-												alt="mens"
-											/>
+										<div class="products__card">
+											<div class="product__img">
+												<img
+													src="assets/images/products/girls/t-shirt-2.jpg"
+													alt="girls"
+												/>
+											</div>
 											<div class="products__overlay">
 												<h4 class="products_name">
 													Womens Burn orange casual
@@ -834,11 +853,13 @@
 										</div>
 									</div>
 									<div class="col-lg-6">
-										<div class="product__img">
-											<img
-												src="assets/images/products/girls/t-shirt-3.jpg"
-												alt="mens"
-											/>
+										<div class="products__card">
+											<div class="product__img">
+												<img
+													src="assets/images/products/girls/t-shirt-3.jpg"
+													alt="girls"
+												/>
+											</div>
 											<div class="products__overlay">
 												<h4 class="products_name">
 													Womens Burn orange casual
@@ -887,10 +908,12 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-12">
-								<div class="row">
-									<div class="col-lg-8">
-										<div class="product__img">
+						</div>
+						<div class="row products__content">
+							<div class="col-lg-12">
+								<div class="row products__items">
+									<div class="col-lg-8 order-2 order-lg-0">
+										<div class="product__img bwh">
 											<img
 												src="assets/images/banner/lockbood.jpg"
 												alt=""
@@ -923,13 +946,14 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-lg-4">
-										<div class="product__img">
-											<img
-												src="assets/images/products/girls/t-shirt-4.jpg"
-												alt="mens"
-												class="img-fluid"
-											/>
+									<div class="col-lg-4 order-1 order-lg-0">
+										<div class="products__card bwh">
+											<div class="product__img">
+												<img
+													src="assets/images/products/girls/t-shirt-1.jpg"
+													alt="mens"
+												/>
+											</div>
 											<div class="products__overlay">
 												<h4 class="products_name">
 													Womens Burn orange casual
@@ -990,11 +1014,14 @@
 							<div class="col-lg-6">
 								<div class="row products__items">
 									<div class="col-lg-6">
-										<div class="product__img">
-											<img
-												src="assets/images/products/Mens/t-shirt-1.jpg"
-												alt="mens"
-											/>
+										<div class="products__card">
+											<div class="product__img">
+												<img
+													src="assets/images/products/Mens/t-shirt-1.jpg"
+													alt="mens"
+													class="img-fluid"
+												/>
+											</div>
 											<div class="products__overlay">
 												<h4 class="products_name">
 													Womens Burn orange casual
@@ -1042,11 +1069,13 @@
 										</div>
 									</div>
 									<div class="col-lg-6">
-										<div class="product__img">
-											<img
-												src="assets/images/products/girls/t-shirt-1.jpg"
-												alt="mens"
-											/>
+										<div class="products__card">
+											<div class="product__img">
+												<img
+													src="assets/images/products/girls/t-shirt-1.jpg"
+													alt="mens"
+												/>
+											</div>
 											<div class="products__overlay">
 												<h4 class="products_name">
 													Womens Burn orange casual
@@ -1096,11 +1125,14 @@
 								</div>
 								<div class="row products__items">
 									<div class="col-lg-6">
-										<div class="product__img">
-											<img
-												src="assets/images/products/Mens/t-shirt-2-sm.jpg"
-												alt="mens"
-											/>
+										<div class="products__card">
+											<div class="product__img">
+												<img
+													src="assets/images/products/Mens/t-shirt-2-sm.jpg"
+													alt="mens"
+													class="img-fluid"
+												/>
+											</div>
 											<div class="products__overlay">
 												<h4 class="products_name">
 													Womens Burn orange casual
@@ -1148,11 +1180,14 @@
 										</div>
 									</div>
 									<div class="col-lg-6">
-										<div class="product__img">
-											<img
-												src="assets/images/products/Mens/t-shirt-3-sm.jpg"
-												alt="mens"
-											/>
+										<div class="products__card">
+											<div class="product__img">
+												<img
+													src="assets/images/products/Mens/t-shirt-3-sm.jpg"
+													alt="mens"
+													class="img-fluid"
+												/>
+											</div>
 											<div class="products__overlay">
 												<h4 class="products_name">
 													Womens Burn orange casual
@@ -1204,7 +1239,7 @@
 							<div class="col-lg-6">
 								<div class="row products__items">
 									<div class="col-12">
-										<div class="product__img">
+										<div class="product__img mb-lg-4">
 											<img
 												src="assets/images/banner/jane.jpg"
 												alt="mens"
@@ -1213,7 +1248,10 @@
 												class="products__overlay content__text"
 											>
 												<h4 class="content_title">
-													jane's lookbook
+													<div class="bold">
+														jane's
+													</div>
+													lookbook
 												</h4>
 												<span class="content_subtitle"
 													>get the look for under
@@ -1239,11 +1277,13 @@
 								</div>
 								<div class="row products__items">
 									<div class="col-lg-6">
-										<div class="product__img">
-											<img
-												src="assets/images/products/girls/t-shirt-2.jpg"
-												alt="mens"
-											/>
+										<div class="products__card">
+											<div class="product__img">
+												<img
+													src="assets/images/products/girls/t-shirt-2.jpg"
+													alt="girls"
+												/>
+											</div>
 											<div class="products__overlay">
 												<h4 class="products_name">
 													Womens Burn orange casual
@@ -1291,11 +1331,13 @@
 										</div>
 									</div>
 									<div class="col-lg-6">
-										<div class="product__img">
-											<img
-												src="assets/images/products/girls/t-shirt-3.jpg"
-												alt="mens"
-											/>
+										<div class="products__card">
+											<div class="product__img">
+												<img
+													src="assets/images/products/girls/t-shirt-3.jpg"
+													alt="girls"
+												/>
+											</div>
 											<div class="products__overlay">
 												<h4 class="products_name">
 													Womens Burn orange casual
@@ -1344,10 +1386,12 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-12">
-								<div class="row">
+						</div>
+						<div class="row products__content">
+							<div class="col-lg-12">
+								<div class="row products__items">
 									<div class="col-lg-8">
-										<div class="product__img">
+										<div class="product__img bwh">
 											<img
 												src="assets/images/banner/lockbood.jpg"
 												alt=""
@@ -1381,12 +1425,13 @@
 										</div>
 									</div>
 									<div class="col-lg-4">
-										<div class="product__img">
-											<img
-												src="assets/images/products/girls/t-shirt-4.jpg"
-												alt="mens"
-												class="img-fluid"
-											/>
+										<div class="products__card bwh">
+											<div class="product__img">
+												<img
+													src="assets/images/products/girls/t-shirt-1.jpg"
+													alt="mens"
+												/>
+											</div>
 											<div class="products__overlay">
 												<h4 class="products_name">
 													Womens Burn orange casual
@@ -1447,11 +1492,14 @@
 							<div class="col-lg-6">
 								<div class="row products__items">
 									<div class="col-lg-6">
-										<div class="product__img">
-											<img
-												src="assets/images/products/Mens/t-shirt-1.jpg"
-												alt="mens"
-											/>
+										<div class="products__card">
+											<div class="product__img">
+												<img
+													src="assets/images/products/Mens/t-shirt-1.jpg"
+													alt="mens"
+													class="img-fluid"
+												/>
+											</div>
 											<div class="products__overlay">
 												<h4 class="products_name">
 													Womens Burn orange casual
@@ -1499,11 +1547,13 @@
 										</div>
 									</div>
 									<div class="col-lg-6">
-										<div class="product__img">
-											<img
-												src="assets/images/products/girls/t-shirt-1.jpg"
-												alt="mens"
-											/>
+										<div class="products__card">
+											<div class="product__img">
+												<img
+													src="assets/images/products/girls/t-shirt-1.jpg"
+													alt="mens"
+												/>
+											</div>
 											<div class="products__overlay">
 												<h4 class="products_name">
 													Womens Burn orange casual
@@ -1552,12 +1602,70 @@
 									</div>
 								</div>
 								<div class="row products__items">
-									<div class="col-12">
-										<div class="product__img">
-											<img
-												src="assets/images/products/Mens/t-shirt-3.jpg"
-												alt="mens"
-											/>
+									<div class="col-lg-6">
+										<div class="products__card">
+											<div class="product__img">
+												<img
+													src="assets/images/products/Mens/t-shirt-2-sm.jpg"
+													alt="mens"
+													class="img-fluid"
+												/>
+											</div>
+											<div class="products__overlay">
+												<h4 class="products_name">
+													Womens Burn orange casual
+													Tess
+													<span class="price"
+														><sup>&#163;</sup
+														>29.95</span
+													>
+												</h4>
+												<p class="products_description">
+													Classic casual t-shirt for
+													woemen on the move. 100%
+													cotton.
+												</p>
+												<ul class="products_cartout">
+													<li
+														class="products_checkout"
+													>
+														<button>
+															<i
+																class="fas fa-shopping-cart"
+															></i>
+														</button>
+													</li>
+													<li
+														class="products_checkout"
+													>
+														<button>
+															<i
+																class="far fa-heart"
+															></i>
+														</button>
+													</li>
+													<li
+														class="products_checkout"
+													>
+														<button>
+															<i
+																class="fas fa-compress-alt"
+															></i>
+														</button>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-6">
+										<div class="products__card">
+											<div class="product__img">
+												<img
+													src="assets/images/products/Mens/t-shirt-3-sm.jpg"
+													alt="mens"
+													class="img-fluid"
+												/>
+											</div>
 											<div class="products__overlay">
 												<h4 class="products_name">
 													Womens Burn orange casual
@@ -1609,11 +1717,105 @@
 							<div class="col-lg-6">
 								<div class="row products__items">
 									<div class="col-12">
-										<div class="product__img">
+										<div class="product__img mb-lg-4">
 											<img
-												src="assets/images/products/Mens/t-shirt-2.jpg"
+												src="assets/images/banner/jane.jpg"
 												alt="mens"
 											/>
+											<div
+												class="products__overlay content__text"
+											>
+												<h4 class="content_title">
+													<div class="bold">
+														jane's
+													</div>
+													lookbook
+												</h4>
+												<span class="content_subtitle"
+													>get the look for under
+													&#163;200!
+												</span>
+												<p class="content_description">
+													We invited actress Jane
+													Marshall to join us for the
+													day and choose her perfect
+													outfit from our vast range
+													of womens fashion. This is
+													of course not true as this
+													is just a design for a
+													website and this is simply
+													filler text.
+												</p>
+												<div class="zs_btn">
+													view now
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row products__items">
+									<div class="col-lg-6">
+										<div class="products__card">
+											<div class="product__img">
+												<img
+													src="assets/images/products/girls/t-shirt-2.jpg"
+													alt="girls"
+												/>
+											</div>
+											<div class="products__overlay">
+												<h4 class="products_name">
+													Womens Burn orange casual
+													Tess
+													<span class="price"
+														><sup>&#163;</sup
+														>29.95</span
+													>
+												</h4>
+												<p class="products_description">
+													Classic casual t-shirt for
+													woemen on the move. 100%
+													cotton.
+												</p>
+												<ul class="products_cartout">
+													<li
+														class="products_checkout"
+													>
+														<button>
+															<i
+																class="fas fa-shopping-cart"
+															></i>
+														</button>
+													</li>
+													<li
+														class="products_checkout"
+													>
+														<button>
+															<i
+																class="far fa-heart"
+															></i>
+														</button>
+													</li>
+													<li
+														class="products_checkout"
+													>
+														<button>
+															<i
+																class="fas fa-compress-alt"
+															></i>
+														</button>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-6">
+										<div class="products__card">
+											<div class="product__img">
+												<img
+													src="assets/images/products/girls/t-shirt-3.jpg"
+													alt="girls"
+												/>
+											</div>
 											<div class="products__overlay">
 												<h4 class="products_name">
 													Womens Burn orange casual
@@ -1661,65 +1863,53 @@
 										</div>
 									</div>
 								</div>
+							</div>
+						</div>
+						<div class="row products__content">
+							<div class="col-lg-12">
 								<div class="row products__items">
-									<div class="col-lg-6">
-										<div class="product__img">
+									<div class="col-lg-8">
+										<div class="product__img bwh">
 											<img
-												src="assets/images/products/girls/t-shirt-2.jpg"
-												alt="mens"
+												src="assets/images/banner/lockbood.jpg"
+												alt=""
+												class="img-fluid"
 											/>
-											<div class="products__overlay">
-												<h4 class="products_name">
-													Womens Burn orange casual
-													Tess
-													<span class="price"
-														><sup>&#163;</sup
-														>29.95</span
-													>
+											<div
+												class="products__overlay content__text"
+											>
+												<h4 class="content_title">
+													win a new look!
 												</h4>
-												<p class="products_description">
-													Classic casual t-shirt for
-													woemen on the move. 100%
-													cotton.
+												<span class="content_subtitle"
+													>get the look for under
+													&#163;200!
+												</span>
+												<p class="content_description">
+													We invited actress Jane
+													Marshall to join us for the
+													day and choose her perfect
+													outfit from our vast range
+													of womens fashion. This is
+													of course not true as this
+													is just a design for a
+													website and this is simply
+													filler text.
 												</p>
-												<ul class="products_cartout">
-													<li
-														class="products_checkout"
-													>
-														<button>
-															<i
-																class="fas fa-shopping-cart"
-															></i>
-														</button>
-													</li>
-													<li
-														class="products_checkout"
-													>
-														<button>
-															<i
-																class="far fa-heart"
-															></i>
-														</button>
-													</li>
-													<li
-														class="products_checkout"
-													>
-														<button>
-															<i
-																class="fas fa-compress-alt"
-															></i>
-														</button>
-													</li>
-												</ul>
+												<div class="zs_btn">
+													view now
+												</div>
 											</div>
 										</div>
 									</div>
-									<div class="col-lg-6">
-										<div class="product__img">
-											<img
-												src="assets/images/products/girls/t-shirt-3.jpg"
-												alt="mens"
-											/>
+									<div class="col-lg-4">
+										<div class="products__card bwh">
+											<div class="product__img">
+												<img
+													src="assets/images/products/girls/t-shirt-1.jpg"
+													alt="mens"
+												/>
+											</div>
 											<div class="products__overlay">
 												<h4 class="products_name">
 													Womens Burn orange casual
@@ -1780,11 +1970,14 @@
 							<div class="col-lg-6">
 								<div class="row products__items">
 									<div class="col-lg-6">
-										<div class="product__img">
-											<img
-												src="assets/images/products/Mens/t-shirt-1.jpg"
-												alt="mens"
-											/>
+										<div class="products__card">
+											<div class="product__img">
+												<img
+													src="assets/images/products/Mens/t-shirt-1.jpg"
+													alt="mens"
+													class="img-fluid"
+												/>
+											</div>
 											<div class="products__overlay">
 												<h4 class="products_name">
 													Womens Burn orange casual
@@ -1832,11 +2025,13 @@
 										</div>
 									</div>
 									<div class="col-lg-6">
-										<div class="product__img">
-											<img
-												src="assets/images/products/girls/t-shirt-1.jpg"
-												alt="mens"
-											/>
+										<div class="products__card">
+											<div class="product__img">
+												<img
+													src="assets/images/products/girls/t-shirt-1.jpg"
+													alt="mens"
+												/>
+											</div>
 											<div class="products__overlay">
 												<h4 class="products_name">
 													Womens Burn orange casual
@@ -1886,11 +2081,14 @@
 								</div>
 								<div class="row products__items">
 									<div class="col-lg-6">
-										<div class="product__img">
-											<img
-												src="assets/images/products/Mens/t-shirt-2-sm.jpg"
-												alt="mens"
-											/>
+										<div class="products__card">
+											<div class="product__img">
+												<img
+													src="assets/images/products/Mens/t-shirt-2-sm.jpg"
+													alt="mens"
+													class="img-fluid"
+												/>
+											</div>
 											<div class="products__overlay">
 												<h4 class="products_name">
 													Womens Burn orange casual
@@ -1938,11 +2136,14 @@
 										</div>
 									</div>
 									<div class="col-lg-6">
-										<div class="product__img">
-											<img
-												src="assets/images/products/Mens/t-shirt-3-sm.jpg"
-												alt="mens"
-											/>
+										<div class="products__card">
+											<div class="product__img">
+												<img
+													src="assets/images/products/Mens/t-shirt-3-sm.jpg"
+													alt="mens"
+													class="img-fluid"
+												/>
+											</div>
 											<div class="products__overlay">
 												<h4 class="products_name">
 													Womens Burn orange casual
@@ -1994,7 +2195,7 @@
 							<div class="col-lg-6">
 								<div class="row products__items">
 									<div class="col-12">
-										<div class="product__img">
+										<div class="product__img mb-lg-4">
 											<img
 												src="assets/images/banner/jane.jpg"
 												alt="mens"
@@ -2003,7 +2204,10 @@
 												class="products__overlay content__text"
 											>
 												<h4 class="content_title">
-													jane's lookbook
+													<div class="bold">
+														jane's
+													</div>
+													lookbook
 												</h4>
 												<span class="content_subtitle"
 													>get the look for under
@@ -2029,11 +2233,13 @@
 								</div>
 								<div class="row products__items">
 									<div class="col-lg-6">
-										<div class="product__img">
-											<img
-												src="assets/images/products/girls/t-shirt-2.jpg"
-												alt="mens"
-											/>
+										<div class="products__card">
+											<div class="product__img">
+												<img
+													src="assets/images/products/girls/t-shirt-2.jpg"
+													alt="girls"
+												/>
+											</div>
 											<div class="products__overlay">
 												<h4 class="products_name">
 													Womens Burn orange casual
@@ -2081,11 +2287,13 @@
 										</div>
 									</div>
 									<div class="col-lg-6">
-										<div class="product__img">
-											<img
-												src="assets/images/products/girls/t-shirt-3.jpg"
-												alt="mens"
-											/>
+										<div class="products__card">
+											<div class="product__img">
+												<img
+													src="assets/images/products/girls/t-shirt-3.jpg"
+													alt="girls"
+												/>
+											</div>
 											<div class="products__overlay">
 												<h4 class="products_name">
 													Womens Burn orange casual
@@ -2134,10 +2342,12 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-12">
-								<div class="row">
+						</div>
+						<div class="row products__content">
+							<div class="col-lg-12">
+								<div class="row products__items">
 									<div class="col-lg-8">
-										<div class="product__img">
+										<div class="product__img bwh">
 											<img
 												src="assets/images/banner/lockbood.jpg"
 												alt=""
@@ -2171,12 +2381,13 @@
 										</div>
 									</div>
 									<div class="col-lg-4">
-										<div class="product__img">
-											<img
-												src="assets/images/products/girls/t-shirt-4.jpg"
-												alt="mens"
-												class="img-fluid"
-											/>
+										<div class="products__card bwh">
+											<div class="product__img">
+												<img
+													src="assets/images/products/girls/t-shirt-1.jpg"
+													alt="mens"
+												/>
+											</div>
 											<div class="products__overlay">
 												<h4 class="products_name">
 													Womens Burn orange casual
@@ -2237,11 +2448,14 @@
 							<div class="col-lg-6">
 								<div class="row products__items">
 									<div class="col-lg-6">
-										<div class="product__img">
-											<img
-												src="assets/images/products/Mens/t-shirt-1.jpg"
-												alt="mens"
-											/>
+										<div class="products__card">
+											<div class="product__img">
+												<img
+													src="assets/images/products/Mens/t-shirt-1.jpg"
+													alt="mens"
+													class="img-fluid"
+												/>
+											</div>
 											<div class="products__overlay">
 												<h4 class="products_name">
 													Womens Burn orange casual
@@ -2289,11 +2503,13 @@
 										</div>
 									</div>
 									<div class="col-lg-6">
-										<div class="product__img">
-											<img
-												src="assets/images/products/girls/t-shirt-1.jpg"
-												alt="mens"
-											/>
+										<div class="products__card">
+											<div class="product__img">
+												<img
+													src="assets/images/products/girls/t-shirt-1.jpg"
+													alt="mens"
+												/>
+											</div>
 											<div class="products__overlay">
 												<h4 class="products_name">
 													Womens Burn orange casual
@@ -2343,11 +2559,14 @@
 								</div>
 								<div class="row products__items">
 									<div class="col-lg-6">
-										<div class="product__img">
-											<img
-												src="assets/images/products/Mens/t-shirt-2-sm.jpg"
-												alt="mens"
-											/>
+										<div class="products__card">
+											<div class="product__img">
+												<img
+													src="assets/images/products/Mens/t-shirt-2-sm.jpg"
+													alt="mens"
+													class="img-fluid"
+												/>
+											</div>
 											<div class="products__overlay">
 												<h4 class="products_name">
 													Womens Burn orange casual
@@ -2395,11 +2614,14 @@
 										</div>
 									</div>
 									<div class="col-lg-6">
-										<div class="product__img">
-											<img
-												src="assets/images/products/Mens/t-shirt-3-sm.jpg"
-												alt="mens"
-											/>
+										<div class="products__card">
+											<div class="product__img">
+												<img
+													src="assets/images/products/Mens/t-shirt-3-sm.jpg"
+													alt="mens"
+													class="img-fluid"
+												/>
+											</div>
 											<div class="products__overlay">
 												<h4 class="products_name">
 													Womens Burn orange casual
@@ -2451,7 +2673,7 @@
 							<div class="col-lg-6">
 								<div class="row products__items">
 									<div class="col-12">
-										<div class="product__img">
+										<div class="product__img mb-lg-4">
 											<img
 												src="assets/images/banner/jane.jpg"
 												alt="mens"
@@ -2460,7 +2682,10 @@
 												class="products__overlay content__text"
 											>
 												<h4 class="content_title">
-													jane's lookbook
+													<div class="bold">
+														jane's
+													</div>
+													lookbook
 												</h4>
 												<span class="content_subtitle"
 													>get the look for under
@@ -2486,11 +2711,13 @@
 								</div>
 								<div class="row products__items">
 									<div class="col-lg-6">
-										<div class="product__img">
-											<img
-												src="assets/images/products/girls/t-shirt-2.jpg"
-												alt="mens"
-											/>
+										<div class="products__card">
+											<div class="product__img">
+												<img
+													src="assets/images/products/girls/t-shirt-2.jpg"
+													alt="girls"
+												/>
+											</div>
 											<div class="products__overlay">
 												<h4 class="products_name">
 													Womens Burn orange casual
@@ -2538,11 +2765,13 @@
 										</div>
 									</div>
 									<div class="col-lg-6">
-										<div class="product__img">
-											<img
-												src="assets/images/products/girls/t-shirt-3.jpg"
-												alt="mens"
-											/>
+										<div class="products__card">
+											<div class="product__img">
+												<img
+													src="assets/images/products/girls/t-shirt-3.jpg"
+													alt="girls"
+												/>
+											</div>
 											<div class="products__overlay">
 												<h4 class="products_name">
 													Womens Burn orange casual
@@ -2591,10 +2820,12 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-12">
-								<div class="row">
+						</div>
+						<div class="row products__content">
+							<div class="col-lg-12">
+								<div class="row products__items">
 									<div class="col-lg-8">
-										<div class="product__img">
+										<div class="product__img bwh">
 											<img
 												src="assets/images/banner/lockbood.jpg"
 												alt=""
@@ -2628,12 +2859,13 @@
 										</div>
 									</div>
 									<div class="col-lg-4">
-										<div class="product__img">
-											<img
-												src="assets/images/products/girls/t-shirt-4.jpg"
-												alt="mens"
-												class="img-fluid"
-											/>
+										<div class="products__card bwh">
+											<div class="product__img">
+												<img
+													src="assets/images/products/girls/t-shirt-1.jpg"
+													alt="mens"
+												/>
+											</div>
 											<div class="products__overlay">
 												<h4 class="products_name">
 													Womens Burn orange casual
@@ -2860,7 +3092,7 @@
 		<footer id="footer__area">
 			<div class="container container_sm">
 				<div class="row footer__top">
-					<div class="top__content col-lg-2">
+					<div class="top__content col-lg-2 col-6">
 						<h4 class="content_title">Information</h4>
 						<ul class="footer__info">
 							<li class="info__item">
@@ -2878,7 +3110,7 @@
 							<li class="info__item"><a href="#">Site Map</a></li>
 						</ul>
 					</div>
-					<div class="top__content col-lg-2">
+					<div class="top__content col-lg-2 col-6">
 						<h4 class="content_title">why buy from us</h4>
 						<ul class="footer__info">
 							<li class="info__item">
@@ -2898,7 +3130,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="top__content col-lg-2">
+					<div class="top__content col-lg-2 col-6">
 						<h4 class="content_title">Your Account</h4>
 						<ul class="footer__info">
 							<li class="info__item">
@@ -2921,7 +3153,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="top__content col-lg-3">
+					<div class="top__content col-lg-3 col-6">
 						<h4 class="content_title">lookbook</h4>
 						<ul class="footer__info">
 							<li class="info__item">
@@ -2960,24 +3192,28 @@
 					</div>
 				</div>
 				<div class="row footer__bottom">
-					<div class="col-lg-6  text-center">
+					<div class="col-lg-6 text-center">
 						<div class="footer__box">
 							<h2 class="footer__box_title">Award winner</h2>
-						<span class="footer__box_subtitle"
-							>Fashion awards 2016</span
-						>
+							<span class="footer__box_subtitle"
+								>Fashion awards 2016</span
+							>
 						</div>
 					</div>
-					<div class="col-lg-6 ">
+					<div class="col-lg-6">
 						<div class="footer__box_social">
-							<ul class="footer__social-links d-flex text justify-content-center">
+							<ul
+								class="footer__social-links d-flex text justify-content-center"
+							>
 								<li class="social-links_item">
 									<a href="#">
 										<i class="fab fa-facebook-f"></i
 									></a>
 								</li>
 								<li class="social-links_item">
-									<a href="#"> <i class="fab fa-twitter"></i></a>
+									<a href="#">
+										<i class="fab fa-twitter"></i
+									></a>
 								</li>
 								<li class="social-links_item">
 									<a href="#">

@@ -19,6 +19,26 @@
 	}
 }
 
+%banner_sub {
+	@include font(48px, 54px, null, #fff);
+	display: inline-block;
+	width: 100%;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: map-get($weight, regular);
+	.bold {
+		font-family: proximaB;
+	}
+}
+%slogan {
+	@include font(30px, 54px, null, #fff);
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	.highlight {
+		color: color(eggblue);
+	}
+}
+
 //  media mixin
 @mixin large {
 	@media (min-width: 1200px) and (max-width: 1600px) {
