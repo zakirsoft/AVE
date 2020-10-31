@@ -15,6 +15,43 @@
 					}
 				}
 			}
+
+			.higlight_btn {
+				@include font(14px, 0px, weight(semi-bold), color(eggblue));
+				cursor: pointer;
+			}
+
+			.main-line {
+				margin: 0 10px;
+			}
+
+			.list-inline {
+				span {
+					@include font(
+						14px,
+						0px,
+						weight(semi-bold),
+						color(Dovegray)
+					);
+				}
+
+				li {
+					a {
+						color: color(gray);
+					}
+				}
+			}
+		}
+
+		margin-bottom: 20px;
+
+		.single-product__info_price {
+			color: #9a9a9a;
+			font-size: 30px;
+			font-weight: 300;
+			letter-spacing: 3px;
+			padding-top: 14px;
+			margin-bottom: 28px;
 		}
 		.products__content {
 			.products__items {
@@ -168,5 +205,35 @@
 	.tab-content {
 		border-bottom: 1px solid #ddd;
 		padding-bottom: 30px;
+	}
+}
+#about-product {
+	padding-top: 6px;
+	.nav-tabs {
+		background: #f8f8f8;
+		border: 0;
+		margin-bottom: 22px;
+		.nav-link {
+			@include font(16px, 20px, weight(regular), color(Donjuan));
+			text-transform: uppercase;
+			border: 0;
+			background-color: inherit;
+			border-radius: 0;
+			padding: 20px;
+			margin-right: 55px;
+			&.active {
+				color: #fff;
+				background-color: #333333;
+			}
+		}
+	}
+	.tabs-title {
+		h6 {
+			@include font(13px, 30px, weight(semi-bold), color(Dovegray));
+			text-transform: uppercase;
+		}
+		p {
+			@include font(15px, 22px, weight(regular), color(gray));
+		}
 	}
 }

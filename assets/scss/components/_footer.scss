@@ -25,7 +25,10 @@
         margin-top: 35px;
         .footer__box{
             background: color(mine);
-            padding: 50px 0;
+            height: 195px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             .footer__box_title{
                 @include font(36px, 48px, weight(bold), color(white));
                 margin: 0;
@@ -36,11 +39,11 @@
         }
         .footer__box_social{
             background: color(eggblue);
-            padding: 50px 0;
             .social-links_item{
-                padding: 20px 15px;
+                margin: 0;
                 a{
                     font-size: 26px;
+                    padding: 20px 15px;
                     color: color(white);
                 }
             }
