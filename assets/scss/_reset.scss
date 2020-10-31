@@ -79,6 +79,13 @@ section {
 		background: color(eggblue);
 	}
 }
+.fix{
+	overflow: hidden;
+}
 .mt-30{
 	margin-top: 30px;
+}
+
+.slick-slide {
+	outline: none;
 }

@@ -17,34 +17,38 @@
 #country-address{
     background: #f8f8f8;
     padding: 0;
-    margin-bottom: 60px;
+    margin-bottom: 120px;
     .country__content_heading{
         @include font(18px, 20px, weight(regular), color(Donjuan));
         text-transform: uppercase;
-        padding-bottom: 7px;
-        margin-top: 41px;
+        padding-bottom: 15px;
+        margin-top: 37px;
     } 
     .country__content_location{
         @include font(15px, 22px, weight(regular), color(gray));
         text-transform: uppercase;
     }
-    .country__content_details,
-    .country__content_info{
+    .country__info{
+        p{
+            @include font(13px, 20px, weight(regular), color(Dovegray));
+            padding-top: 10px;
+            padding-bottom: 13px;
+        }
+    }
+    .country__content__info{
         @include font(13px, 20px, weight(regular), color(Dovegray));
         padding-top: 8px;
         padding-bottom: 25px;
-    }
-
-    .country__content_info{
         li{
             padding-bottom: 10px;
+            list-style: none;
             i{
                 margin-right: 15px;
             }
         }
     }
     .country__content_links {
-        margin-top: 23px;
+        margin-top: 25px;
         .list-inline-item{ 
             background: #727272;
             border-radius: 100%;
@@ -53,6 +57,10 @@
             line-height: 30px;
             text-align: center;
             margin-right: 12px;
+            transition: .3s;
+            &:hover{
+                background: color(eggblue);
+            }
             a{
                 color: white;
             }

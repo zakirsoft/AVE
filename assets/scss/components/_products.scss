@@ -207,33 +207,3 @@
 		padding-bottom: 30px;
 	}
 }
-#about-product {
-	padding-top: 6px;
-	.nav-tabs {
-		background: #f8f8f8;
-		border: 0;
-		margin-bottom: 22px;
-		.nav-link {
-			@include font(16px, 20px, weight(regular), color(Donjuan));
-			text-transform: uppercase;
-			border: 0;
-			background-color: inherit;
-			border-radius: 0;
-			padding: 20px;
-			margin-right: 55px;
-			&.active {
-				color: #fff;
-				background-color: #333333;
-			}
-		}
-	}
-	.tabs-title {
-		h6 {
-			@include font(13px, 30px, weight(semi-bold), color(Dovegray));
-			text-transform: uppercase;
-		}
-		p {
-			@include font(15px, 22px, weight(regular), color(gray));
-		}
-	}
-}
